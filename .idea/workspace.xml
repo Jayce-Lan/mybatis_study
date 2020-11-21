@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a762966a-a50f-43a9-b77b-2a99e3759f4d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-01/src/main/java/com/learn/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-01/src/main/java/com/learn/dao/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-01/src/main/java/com/learn/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-01/src/test/java/com/learn/dao/UserDaoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-01/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-01/src/main/java/com/learn/utils/MybatisUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01/src/main/java/com/learn/utils/MybatisUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-01/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a762966a-a50f-43a9-b77b-2a99e3759f4d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,7 +94,7 @@
       <updated>1605883962031</updated>
       <workItem from="1605883966018" duration="3845000" />
       <workItem from="1605888979717" duration="232000" />
-      <workItem from="1605918783442" duration="11395000" />
+      <workItem from="1605918783442" duration="11455000" />
     </task>
     <servers />
   </component>
@@ -123,30 +110,30 @@
       <screen x="0" y="0" width="1280" height="679" />
     </state>
     <state x="446" y="23" key="#com.intellij.ide.util.MemberChooser/0.0.1280.679@0.0.1280.679" timestamp="1605925694453" />
-    <state width="1237" height="235" key="GridCell.Tab.0.bottom" timestamp="1605930476428">
+    <state width="1237" height="235" key="GridCell.Tab.0.bottom" timestamp="1605930519194">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
-    <state width="1237" height="235" key="GridCell.Tab.0.bottom/0.0.1280.679@0.0.1280.679" timestamp="1605930476428" />
-    <state width="1237" height="235" key="GridCell.Tab.0.center" timestamp="1605930476428">
+    <state width="1237" height="235" key="GridCell.Tab.0.bottom/0.0.1280.679@0.0.1280.679" timestamp="1605930519194" />
+    <state width="1237" height="235" key="GridCell.Tab.0.center" timestamp="1605930519192">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
-    <state width="1237" height="235" key="GridCell.Tab.0.center/0.0.1280.679@0.0.1280.679" timestamp="1605930476428" />
-    <state width="1237" height="235" key="GridCell.Tab.0.left" timestamp="1605930476428">
+    <state width="1237" height="235" key="GridCell.Tab.0.center/0.0.1280.679@0.0.1280.679" timestamp="1605930519192" />
+    <state width="1237" height="235" key="GridCell.Tab.0.left" timestamp="1605930519192">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
-    <state width="1237" height="235" key="GridCell.Tab.0.left/0.0.1280.679@0.0.1280.679" timestamp="1605930476428" />
-    <state width="1237" height="235" key="GridCell.Tab.0.right" timestamp="1605930476428">
+    <state width="1237" height="235" key="GridCell.Tab.0.left/0.0.1280.679@0.0.1280.679" timestamp="1605930519192" />
+    <state width="1237" height="235" key="GridCell.Tab.0.right" timestamp="1605930519193">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
-    <state width="1237" height="235" key="GridCell.Tab.0.right/0.0.1280.679@0.0.1280.679" timestamp="1605930476428" />
+    <state width="1237" height="235" key="GridCell.Tab.0.right/0.0.1280.679@0.0.1280.679" timestamp="1605930519193" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1605884755791">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.679@0.0.1280.679" timestamp="1605884755791" />
-    <state x="325" y="163" key="com.intellij.ide.util.TipDialog" timestamp="1605918783516">
+    <state x="325" y="163" key="com.intellij.ide.util.TipDialog" timestamp="1605930817434">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
-    <state x="325" y="163" key="com.intellij.ide.util.TipDialog/0.0.1280.679@0.0.1280.679" timestamp="1605918783516" />
+    <state x="325" y="163" key="com.intellij.ide.util.TipDialog/0.0.1280.679@0.0.1280.679" timestamp="1605930817434" />
     <state x="28" y="34" key="new project wizard" timestamp="1605920945360">
       <screen x="0" y="0" width="1280" height="679" />
     </state>

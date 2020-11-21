@@ -50,7 +50,20 @@
     </project>
     ```
 
-  
+
+
+### 创建项目顺序
+
+- 创建项目`mybatis-01`
+- 配置`pom.xml`文件
+- 写入`MybatisUtiles.java`工具类
+- 配置`mybatis-config.xml`文件
+- 创建一个User.java类实体化对象
+- 创建一个`UserDao.java`实例化接口
+- 配置`UserMapper.xml`写入SQL语句并实现UserDao中的方法
+- 创建`UserDaoTest.java`测试用例
+
+
 
 ### 项目目录
 
