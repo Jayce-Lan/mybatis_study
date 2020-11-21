@@ -5,8 +5,16 @@ package com.learn.dao;
 import com.learn.pojo.User;
 
 import java.util.List;
+import java.util.Map;
 
 public interface UserMapper {
+
+    /**
+     * 模糊查询用户
+     * @return 返回符合条件的用户
+     */
+    List<User> getUserLike(String value);
+
     /**
      * 获取实体类对象(全部用户)
      * @return
@@ -26,6 +34,13 @@ public interface UserMapper {
      * @return 插入成功返回1
      */
     int addUser(User user);
+
+    /**
+     * 使用Map集合插入用户
+     * @param map 传入的集合
+     * @return 插入成功返回1
+     */
+    int addUser2(Map<String, Object> map);
 
     /**
      * 修改用户

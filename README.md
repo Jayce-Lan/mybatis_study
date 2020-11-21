@@ -228,3 +228,82 @@
 </delete>
 ```
 
+
+
+## Map实现模糊查改
+
+> 使用Map集合插入语句可以使得在UserMapper.xml中的sql语句插入字符不再受到User这个类的限制
+>
+> 假设数据表中的字段过多，建议使用Map
+
+```java
+ @Test
+    public void addUser2() {
+        SqlSession sqlSession = null;
+        try {
+            sqlSession = MybatisUtils.getSqlSession();
+            UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+            Map<String, Object> map = new HashMap<String, Object>();
+            map.put("userId", 4);
+            map.put("userName", "李雷");
+            map.put("passWord", "000999");
+            int count = userMapper.addUser2(map);
+            System.out.println(count > 0 ? "添加成功！" : "添加失败！");
+            sqlSession.commit();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            sqlSession.close();
+        }
+    }
+```
+
+sql语句中的字段只需要和Map集合的键相同即可
+
+```xml
+<!--使用map集合新增数据库语句-->
+<insert id="addUser2" parameterType="map">
+    <!--所需插入数据和Map的键名是相同的-->
+    insert into user (id, name, pwd) values (#{userId}, #{userName}, #{passWord});
+</insert>
+```
+
+#### 注意的点
+
+- Map传递参数，直接在sql中取出key即可【`parameterType="map"`】
+- 对象传递参数，直接在sql语句中填写对象的属性即可【`parameterType="Object"`】
+- 只有一个基本类型参数的情况下，可以直接在sql中取到【`parameterType="int"`，或者留空不写】
+- 多个参数建议使用Map或注解
+
+
+
+## 模糊查询
+
+> Java代码运行时执行通配符，不要将模糊查询写死在xml中，否则会容易造成SQL注入
+
+```java
+@Test
+public void getUserLike() {
+    SqlSession sqlSession = null;
+    sqlSession = MybatisUtils.getSqlSession();
+    UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+    String value = "李";
+    List<User> userList = userMapper.getUserLike("%" + value + "%");
+
+    for (User user : userList) {
+        System.out.println(user);
+    }
+
+    sqlSession.close();
+}
+```
+
+在Java中拼接好了通配符，那么在xml中只需要传入稳定的字符串就可以了
+
+```xml
+<!--模糊查询用户信息-->
+<select id="getUserLike" resultType="com.learn.pojo.User" parameterType="map">
+    select * from user where name like #{value};
+</select>
+```
+

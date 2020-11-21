@@ -5,9 +5,27 @@ import com.learn.utils.MybatisUtils;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class UserMapperTest {
+
+    @Test
+    public void getUserLike() {
+        SqlSession sqlSession = null;
+        sqlSession = MybatisUtils.getSqlSession();
+        UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+        String value = "李";
+        List<User> userList = userMapper.getUserLike("%" + value + "%");
+
+        for (User user : userList) {
+            System.out.println(user);
+        }
+
+        sqlSession.close();
+    }
+
     /**
      * 用于测试dao层方法的测试用类
      * 测试数据库表的查询语句
@@ -71,6 +89,29 @@ public class UserMapperTest {
             if (count > 0)
                 System.out.println("添加成功！");
             //提交事务
+            sqlSession.commit();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            sqlSession.close();
+        }
+    }
+
+    /**
+     * 使用Map集合插入对象
+     */
+    @Test
+    public void addUser2() {
+        SqlSession sqlSession = null;
+        try {
+            sqlSession = MybatisUtils.getSqlSession();
+            UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+            Map<String, Object> map = new HashMap<String, Object>();
+            map.put("userId", 5);
+            map.put("userName", "李六");
+            map.put("passWord", "000999");
+            int count = userMapper.addUser2(map);
+            System.out.println(count > 0 ? "添加成功！" : "添加失败！");
             sqlSession.commit();
         } catch (Exception e) {
             e.printStackTrace();
