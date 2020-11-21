@@ -10,7 +10,7 @@
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
                 <!--此处的amp;为转义符，因为在这里配置时，直接使用&符号是不被允许的-->
-                <property name="url" value="jdbc:mysql://localhost/learn_db?useSSL=false&amp;serverTimezone=UTC"/>
+                <property name="url" value="jdbc:mysql://localhost/mybatis?useSSL=false&amp;serverTimezone=UTC"/>
                 <property name="username" value="root"/>
                 <property name="password" value="root"/>
             </dataSource>

@@ -3,13 +3,37 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!--命名空间namespace绑定一个指定的Dao/Mapper接口-->
-<mapper namespace="com.learn.dao.UserDao">
+<mapper namespace="com.learn.dao.UserMapper">
     <!--
-        @id 对应UserDao的方法名
-        @resultType 返回查询的类型
+        @id 对应UserMapper的方法名
+        @resultType sql语句查询的返回值
         @resultMap 返回查询集合
     -->
     <select id="getUserList" resultType="com.learn.pojo.User">
         select * from mybatis.user;
     </select>
+
+    <!--
+        @id 对应UserMapper的方法名
+        @resultType sql语句查询的返回值
+        @parameterType 查询语句所需的参数的类型
+    -->
+    <select id="getUserById" resultType="com.learn.pojo.User" parameterType="int">
+        select * from  user where id = #{id}
+    </select>
+
+    <!--对象中的属性可以直接取出-->
+    <insert id="addUser" parameterType="com.learn.pojo.User">
+        insert into user (id, name, pwd) values (#{id}, #{name}, #{pwd});
+    </insert>
+    
+    <!--修改用户-->
+    <update id="updateUser" parameterType="com.learn.pojo.User">
+        update user set name = #{name}, pwd = #{pwd} where id = #{id};
+    </update>
+
+    <!--删除用户-->
+    <delete id="deleteUser" parameterType="int">
+        delete from user where  id = #{id};
+    </delete>
 </mapper>

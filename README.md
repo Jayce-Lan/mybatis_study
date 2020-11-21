@@ -59,7 +59,7 @@
 - 写入`MybatisUtiles.java`工具类
 - 配置`mybatis-config.xml`文件
 - 创建一个User.java类实体化对象
-- 创建一个`UserDao.java`实例化接口
+- 创建一个`UserMapper.java`(UserDao)实例化接口
 - 配置`UserMapper.xml`写入SQL语句并实现UserDao中的方法
 - 创建`UserDaoTest.java`测试用例
 
@@ -74,8 +74,8 @@
         - java：用于存放Java代码的地方
           - com.learn
             - dao：存放接口的文件夹
-              - `UserDao`：用于操作数据库实例的接口
-              - `UserMapper.xml`：用于存放SQL语句的配置文件，用于实现`UserDao`的方法，类似于原本的`UserDaoImpl`
+              - `UserMapper`：用于操作数据库实例的接口
+              - `UserMapper.xml`：用于存放SQL语句的配置文件，其每个数据库语句的id都对应所需实现`UserMapper`的方法，类似于原本的`UserDaoImpl`
             - pojo：存放实现类的文件夹
               - `User`：映射数据库中的对象
             - utils：存放工具类的文件夹
@@ -132,5 +132,99 @@
 <mappers>
     <mapper resource="com/learn/dao/UserMapper.xml"/>
 </mappers>
+```
+
+
+
+## CRUD
+
+> `UserMapper.xml`中的`namespace`包名必须和Dao接口包名一致
+>
+> 值得注意的是，增删改需要提交事务
+
+### `xxxMapper.xml`文件
+
+```xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--命名空间namespace绑定一个指定的Dao/Mapper接口-->
+<mapper namespace="com.learn.dao.UserMapper">
+    <!--
+        @id 对应UserMapper的方法名
+        @resultType sql语句查询的返回值
+        @resultMap 返回查询集合
+		@parameterType 查询语句所需的参数的类型
+    -->
+    <select id="getUserList" resultType="com.learn.pojo.User" parameterType="">
+        select * from mybatis.user;
+    </select>
+</mapper>
+```
+
+
+
+#### select
+
+> 选择、查询语句
+
+```xml
+<!--
+        @id 对应UserMapper的方法名
+        @resultType sql语句查询的返回值
+        @resultMap 返回查询集合
+    -->
+<select id="getUserList" resultType="com.learn.pojo.User">
+    select * from mybatis.user;
+</select>
+
+<!--
+        @id 对应UserMapper的方法名
+        @resultType sql语句查询的返回值
+        @parameterType 查询语句所需的参数的类型
+    -->
+<select id="getUserById" resultType="com.learn.pojo.User" parameterType="int">
+    select * from  user where id = #{id}
+</select>
+```
+
+
+
+#### insert
+
+> 插入、新增语句
+
+```xml
+<!--对象中的属性可以直接取出，这里没有返回值-->
+<insert id="addUser" parameterType="com.learn.pojo.User">
+    insert into user (id, name, pwd) values (#{id}, #{name}, #{pwd});
+</insert>
+```
+
+
+
+#### update
+
+> 修改语句
+
+```xml
+<!--修改用户-->
+<update id="updateUser" parameterType="com.learn.pojo.User">
+    update user set name = #{name}, pwd = #{pwd} where id = #{id};
+</update>
+```
+
+
+
+#### delete
+
+> 删除语句
+
+```xml
+<!--删除用户-->
+<delete id="deleteUser" parameterType="int">
+    delete from user where  id = #{id};
+</delete>
 ```
 
