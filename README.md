@@ -2,7 +2,9 @@
 
 
 
-## 启动流程
+## 入门案例mybatis-01
+
+### 启动流程
 
 - 使用idea搭建maven项目
 
@@ -50,7 +52,7 @@
 
   
 
-## 项目目录
+### 项目目录
 
 - mybatis_study(父类项目文件夹)
   - mybatis-01：子类项目文件夹
@@ -58,9 +60,64 @@
       - main
         - java：用于存放Java代码的地方
           - com.learn
-            - dao
+            - dao：存放接口的文件夹
+              - `UserDao`：用于操作数据库实例的接口
+              - `UserMapper.xml`：用于存放SQL语句的配置文件，用于实现`UserDao`的方法，类似于原本的`UserDaoImpl`
+            - pojo：存放实现类的文件夹
+              - `User`：映射数据库中的对象
             - utils：存放工具类的文件夹
-        - resources：存放配置文件的文件夹
-          - `mybatis-config.xml`：里面存放了JDBC的参数
+              - `MybatisUtils`：用于获取sqlSessionFactory对象的工厂类
+          - resources：存放配置文件的文件夹
+            - `mybatis-config.xml`：里面存放了JDBC的参数
+        - test：用于存放测试类代码
+          - java：将对应的需要测试的Dao文件夹名称放入此处
+            - com.learn
+              - dao
+                - `UserDaoTest`：测试UserDao的测试类
     - `pom.xml`：子级maven依赖，继承父级
   - `pom.xml`：父级maven依赖
+
+
+
+### 注意事项
+
+#### 测试编译中缺少xml实例而编译失败
+
+> 在`pom.xml`中需要配置以下文件，用以防止在测试编译中dao包中创建的xml文件不被编译的情况发生
+
+```xml
+<!--在build中配置resources，来防止我们资源到处失败问题-->
+<build>
+    <resources>
+        <resource>
+            <directory>src/main/resources</directory>
+            <includes>
+                <include>**/*.properties</include>
+                <include>**/*.xml</include>
+            </includes>
+            <filtering>true</filtering>
+        </resource>
+        <resource>
+            <directory>src/main/java</directory>
+            <includes>
+                <include>**/*.properties</include>
+                <include>**/*.xml</include>
+            </includes>
+            <filtering>true</filtering>
+        </resource>
+    </resources>
+</build>
+```
+
+
+
+#### 配置文件问题
+
+> 在resources文件夹中，要注意在<mappers></mappers>中注册好dao层的所有xml文件，否则会编译失败
+
+```xml
+<mappers>
+    <mapper resource="com/learn/dao/UserMapper.xml"/>
+</mappers>
+```
+
