@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.learn.dao.UserMapper">
+    <select id="getUserList" resultType="user">
+        select * from user;
+    </select>
+
+<!--
+    @id 对应下面sql语句对应的resultMap
+    @type 对应的返回类型
+-->
+    <resultMap id="UserMap" type="User">
+<!--        @column 对应数据库中的列 @property 对应Java创建实体的属性-->
+        <result column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="pwd" property="password"/>
+    </resultMap>
+    <!--    使用结果集映射
+        @resultMap 定义一个不存在的映射集合
+        @<resultMap> 上面的标签用于引用
+-->
+    <select id="getUserById" resultMap="UserMap" parameterType="int">
+         select * from  user where id = #{id}
+<!-- 方法1：在sql语句中将需要查询的类转为与自己项目中实体类对应的名字-->
+<!--        select id, name, pwd as password from user where id = #{id}-->
+    </select>
+</mapper>
