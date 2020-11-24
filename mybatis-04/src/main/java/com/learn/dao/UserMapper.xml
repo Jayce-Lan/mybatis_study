@@ -10,4 +10,9 @@
     <select id="getUserById" resultType="user" parameterType="int">
         select * from  user where id = #{id}
     </select>
+
+<!--    分页查询-->
+    <select id="getUserByLimit" resultType="user" parameterType="map">
+        select * from user limit #{startIndex}, #{pageSize}
+    </select>
 </mapper>
