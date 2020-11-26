@@ -10,4 +10,6 @@ public interface StudentMapper {
      * @return 返回信息
      */
     List<Student> getStudentMsg();
+
+    List<Student> getStudentMsg2();
 }

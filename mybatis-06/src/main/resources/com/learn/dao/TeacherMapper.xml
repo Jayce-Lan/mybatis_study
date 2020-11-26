@@ -2,8 +2,8 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.learn.dao.StudentMapper">
-    <select id="getStudentMsg" resultType="com.learn.pojo.Student">
-        select * from student;
+<mapper namespace="com.learn.dao.TeacherMapper">
+    <select id="getTeacherById" resultType="teacher" parameterType="int">
+        select * from teacher where id = #{id};
     </select>
 </mapper>

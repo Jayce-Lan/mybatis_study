@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.learn.dao.StudentMapper">
+<!--
+       需求：查询所有学生信息，以及对应的老师
+       属性：按照查询嵌套处理
+       思路：
+        1.查询所有学生
+        2.根据查询出的学生tid，寻找对应老师
+
+       @resultMap 首先，返回值不再指定为student，而是设置为map
+-->
+    <select id="getStudentMsg" resultMap="studentTeacher">
+        select * from student;
+    </select>
+    <resultMap id="studentTeacher" type="student">
+        <result property="id" column="id"/>
+        <result property="name" column="name"/>
+<!--        单独处理复杂属性
+        对象：association
+        集合：collection
+        @property 实体类中的属性
+        @column sql语句中的属性
+        @javaType 对应的Java实体类
+        @select 对应的sql查询语句的id
+-->
+        <association property="teacher" column="tid" javaType="Teacher" select="getTeacherById"/>
+    </resultMap>
+
+    <select id="getTeacherById" resultType="teacher">
+        select * from teacher where id = #{id}
+    </select>
+
+<!--    ================================================================================================================-->
+
+<!--    按照结果嵌套处理(常用方式)-->
+    <select id="getStudentMsg2" resultMap="studentTeacher2">
+        select s.id sid, s.name sname, t.name tname
+        from student s, teacher t
+        where s.tid = t.id;
+    </select>
+    <resultMap id="studentTeacher2" type="student">
+<!--        这里的id对应上面查询语句所起的别名-->
+        <result property="id" column="sid"/>
+        <result property="name" column="sname"/>
+        <association property="teacher" javaType="Teacher">
+            <result property="name" column="tname"/>
+        </association>
+    </resultMap>
+</mapper>

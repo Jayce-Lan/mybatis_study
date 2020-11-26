@@ -2,23 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a762966a-a50f-43a9-b77b-2a99e3759f4d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-06/mybatis-06.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-06/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-06/src/main/java/com/learn/dao/StudentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-06/src/main/java/com/learn/dao/TeacherMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-06/src/main/java/com/learn/pojo/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-06/src/main/java/com/learn/pojo/Teacher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-06/src/main/java/com/learn/utils/MybatisUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-06/src/main/resources/com.learn.dao/StudentMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-06/src/main/resources/com.learn.dao/TeacherMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-06/src/main/resources/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-06/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-06/src/test/java/MyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-06/src/main/java/com/learn/dao/StudentMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-06/src/main/java/com/learn/dao/StudentMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-06/src/main/java/com/learn/dao/TeacherMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-06/src/main/java/com/learn/dao/TeacherMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-06/src/main/java/com/learn/pojo/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-06/src/main/java/com/learn/pojo/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-06/src/main/resources/com.learn.dao/StudentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-06/src/main/resources/com/learn/dao/StudentMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-06/src/main/resources/com.learn.dao/TeacherMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-06/src/main/resources/com/learn/dao/TeacherMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-06/src/test/java/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-06/src/test/java/MyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-06/target/classes/com.learn.dao/StudentMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-06/target/classes/com.learn.dao/TeacherMapper.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +83,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mybatis-06/src/main/java/com" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mybatis-06/src/main/java/com/learn/dao" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -104,24 +96,25 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\JavaProject\mybatis_study\mybatis-06\src\main\java\com" />
-      <recent name="D:\JavaProject\mybatis_study\mybatis-06\src\main\java" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JavaProject\mybatis_study\mybatis-06\src\main\resources\com\learn\dao" />
       <recent name="D:\JavaProject\mybatis_study\mybatis-06\src\main\resources" />
-      <recent name="D:\JavaProject\mybatis_study\mybatis-05\src\main\java\com\learn" />
+      <recent name="D:\JavaProject\mybatis_study\mybatis-04\src\main\resources" />
       <recent name="D:\JavaProject\mybatis_study\mybatis-05\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.learn.utils" />
       <recent name="com.learn.pojo" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaProject\mybatis_study\mybatis-06\src\main\java\com\learn\dao" />
+      <recent name="D:\JavaProject\mybatis_study\mybatis-06\src\main\java\com" />
+      <recent name="D:\JavaProject\mybatis_study\mybatis-06\src\main\java" />
       <recent name="D:\JavaProject\mybatis_study\mybatis-06\src\main\resources" />
-      <recent name="D:\JavaProject\mybatis_study\mybatis-04\src\main\resources" />
-      <recent name="D:\JavaProject\mybatis_study\mybatis-05\src\main\resources" />
+      <recent name="D:\JavaProject\mybatis_study\mybatis-05\src\main\java\com\learn" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MyTest.testDemo">
+  <component name="RunManager" selected="JUnit.MyTest.getStudentMsg2">
     <configuration name="MyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MyTest" />
       <module name="mybatis-06" />
@@ -134,6 +127,16 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MyTest" />
       <option name="METHOD_NAME" value="getStudentMsg" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest.getStudentMsg2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-06" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyTest" />
+      <option name="METHOD_NAME" value="getStudentMsg2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -165,29 +168,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserMapperTest.getUserById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-05" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.learn.dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.learn.dao" />
-      <option name="MAIN_CLASS_NAME" value="com.learn.dao.UserMapperTest" />
-      <option name="METHOD_NAME" value="getUserById" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MyTest.testDemo" />
+        <item itemvalue="JUnit.MyTest.getStudentMsg2" />
         <item itemvalue="JUnit.MyTest.getStudentMsg" />
+        <item itemvalue="JUnit.MyTest.testDemo" />
         <item itemvalue="Application.MyTest" />
         <item itemvalue="JUnit.UserMapperTest.addUser" />
-        <item itemvalue="JUnit.UserMapperTest.getUserById" />
       </list>
     </recent_temporary>
   </component>
@@ -248,6 +235,7 @@
       <workItem from="1606371894939" duration="38000" />
       <workItem from="1606375180346" duration="2125000" />
       <workItem from="1606377838311" duration="1534000" />
+      <workItem from="1606379830381" duration="3450000" />
     </task>
     <servers />
   </component>
@@ -256,6 +244,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="0" key="#Project_Structure" timestamp="1605886095353">
@@ -281,55 +270,59 @@
     </state>
     <state x="371" y="86" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606375936660" />
     <state x="371" y="86" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.679@0.0.1280.679" timestamp="1606013405058" />
-    <state width="1237" height="454" key="GridCell.Tab.0.bottom" timestamp="1606379372748">
+    <state x="35" y="0" key="CommitChangelistDialog2" timestamp="1606380830792">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
-    <state width="1237" height="454" key="GridCell.Tab.0.bottom/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606379372748" />
+    <state x="35" y="0" key="CommitChangelistDialog2/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606380830792" />
+    <state width="1237" height="311" key="GridCell.Tab.0.bottom" timestamp="1606383284157">
+      <screen x="0" y="0" width="1280" height="679" />
+    </state>
+    <state width="1237" height="311" key="GridCell.Tab.0.bottom/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606383284157" />
     <state width="1237" height="235" key="GridCell.Tab.0.bottom/0.0.1280.679@0.0.1280.679" timestamp="1606014659714" />
-    <state width="1237" height="454" key="GridCell.Tab.0.center" timestamp="1606379372748">
+    <state width="1237" height="311" key="GridCell.Tab.0.center" timestamp="1606383284157">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
-    <state width="1237" height="454" key="GridCell.Tab.0.center/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606379372748" />
+    <state width="1237" height="311" key="GridCell.Tab.0.center/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606383284157" />
     <state width="1237" height="235" key="GridCell.Tab.0.center/0.0.1280.679@0.0.1280.679" timestamp="1606014659714" />
-    <state width="1237" height="454" key="GridCell.Tab.0.left" timestamp="1606379372748">
+    <state width="1237" height="311" key="GridCell.Tab.0.left" timestamp="1606383284157">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
-    <state width="1237" height="454" key="GridCell.Tab.0.left/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606379372748" />
+    <state width="1237" height="311" key="GridCell.Tab.0.left/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606383284157" />
     <state width="1237" height="235" key="GridCell.Tab.0.left/0.0.1280.679@0.0.1280.679" timestamp="1606014659714" />
-    <state width="1237" height="454" key="GridCell.Tab.0.right" timestamp="1606379372748">
+    <state width="1237" height="311" key="GridCell.Tab.0.right" timestamp="1606383284157">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
-    <state width="1237" height="454" key="GridCell.Tab.0.right/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606379372748" />
+    <state width="1237" height="311" key="GridCell.Tab.0.right/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606383284157" />
     <state width="1237" height="235" key="GridCell.Tab.0.right/0.0.1280.679@0.0.1280.679" timestamp="1606014659714" />
-    <state width="1237" height="454" key="GridCell.Tab.1.bottom" timestamp="1606379372748">
+    <state width="1237" height="311" key="GridCell.Tab.1.bottom" timestamp="1606383284158">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
-    <state width="1237" height="454" key="GridCell.Tab.1.bottom/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606379372748" />
+    <state width="1237" height="311" key="GridCell.Tab.1.bottom/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606383284158" />
     <state width="1237" height="272" key="GridCell.Tab.1.bottom/0.0.1280.679@0.0.1280.679" timestamp="1606014659710" />
-    <state width="1237" height="454" key="GridCell.Tab.1.center" timestamp="1606379372748">
+    <state width="1237" height="311" key="GridCell.Tab.1.center" timestamp="1606383284158">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
-    <state width="1237" height="454" key="GridCell.Tab.1.center/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606379372748" />
+    <state width="1237" height="311" key="GridCell.Tab.1.center/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606383284158" />
     <state width="1237" height="272" key="GridCell.Tab.1.center/0.0.1280.679@0.0.1280.679" timestamp="1606014659710" />
-    <state width="1237" height="454" key="GridCell.Tab.1.left" timestamp="1606379372748">
+    <state width="1237" height="311" key="GridCell.Tab.1.left" timestamp="1606383284158">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
-    <state width="1237" height="454" key="GridCell.Tab.1.left/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606379372748" />
+    <state width="1237" height="311" key="GridCell.Tab.1.left/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606383284158" />
     <state width="1237" height="272" key="GridCell.Tab.1.left/0.0.1280.679@0.0.1280.679" timestamp="1606014659710" />
-    <state width="1237" height="454" key="GridCell.Tab.1.right" timestamp="1606379372748">
+    <state width="1237" height="311" key="GridCell.Tab.1.right" timestamp="1606383284158">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
-    <state width="1237" height="454" key="GridCell.Tab.1.right/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606379372748" />
+    <state width="1237" height="311" key="GridCell.Tab.1.right/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606383284158" />
     <state width="1237" height="272" key="GridCell.Tab.1.right/0.0.1280.679@0.0.1280.679" timestamp="1606014659710" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1606371917964">
+    <state x="142" y="0" key="SettingsEditor" timestamp="1606380759443">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606371917964" />
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606380759443" />
     <state x="142" y="0" key="SettingsEditor/0.0.1280.679@0.0.1280.679" timestamp="1605884755791" />
-    <state x="325" y="163" key="com.intellij.ide.util.TipDialog" timestamp="1606377838000">
+    <state x="325" y="163" key="com.intellij.ide.util.TipDialog" timestamp="1606379830969">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
-    <state x="325" y="163" key="com.intellij.ide.util.TipDialog/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606377838000" />
+    <state x="325" y="163" key="com.intellij.ide.util.TipDialog/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606379830969" />
     <state x="325" y="163" key="com.intellij.ide.util.TipDialog/0.0.1280.679@0.0.1280.679" timestamp="1606011199800" />
     <state x="412" y="42" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1606010911215">
       <screen x="0" y="0" width="1280" height="679" />
@@ -340,10 +333,10 @@
     </state>
     <state x="56" y="42" key="new project wizard/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606375220704" />
     <state x="56" y="42" key="new project wizard/0.0.1280.679@0.0.1280.679" timestamp="1606013229582" />
-    <state x="624" y="-1" width="672" height="678" key="search.everywhere.popup" timestamp="1606197420723">
+    <state x="624" y="-1" width="672" height="678" key="search.everywhere.popup" timestamp="1606381773340">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
-    <state x="624" y="-1" width="672" height="678" key="search.everywhere.popup/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606197420723" />
+    <state x="624" y="-1" width="672" height="678" key="search.everywhere.popup/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606381773340" />
     <state x="624" y="-1" width="672" height="678" key="search.everywhere.popup/0.0.1280.679@0.0.1280.679" timestamp="1605956109793" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">

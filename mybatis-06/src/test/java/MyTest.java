@@ -33,4 +33,17 @@ public class MyTest {
 
         sqlSession.close();
     }
+
+    @Test
+    public void getStudentMsg2() {
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+        StudentMapper studentMapper = sqlSession.getMapper(StudentMapper.class);
+        List<Student> studentList = studentMapper.getStudentMsg2();
+
+        for (Student student : studentList) {
+            System.out.println(student);
+        }
+
+        sqlSession.close();
+    }
 }
