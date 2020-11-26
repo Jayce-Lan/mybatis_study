@@ -21,4 +21,24 @@ public class UserMapperTest {
 
         sqlSession.close();
     }
+
+    @Test
+    public void getUserById() {
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+        UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+        //由于在MybatisUtils中已经设定了自动提交，因此不再需要提交事务
+        User user = userMapper.getUserById(1);
+        System.out.println(user);
+        sqlSession.close();
+    }
+
+    @Test
+    public void addUser() {
+        SqlSession sqlSession = MybatisUtils.getSqlSession();
+        UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+        int count = userMapper.addUser(new User(6, "张强", "999888"));
+        System.out.println(count == 1 ? "添加成功" : "添加失败！");
+        sqlSession.close();
+    }
+
 }

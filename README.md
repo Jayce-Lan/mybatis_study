@@ -56,12 +56,28 @@
 
 - 创建项目`mybatis-01`
 - 配置`pom.xml`文件
-- 写入`MybatisUtiles.java`工具类
 - 配置`mybatis-config.xml`文件
-- 创建一个User.java类实体化对象
+- 写入`MybatisUtiles.java`工具类
+- 创建一个`User.java`类实体化对象
 - 创建一个`UserMapper.java`(UserDao)实例化接口
 - 配置`UserMapper.xml`写入SQL语句并实现UserDao中的方法
 - 创建`UserDaoTest.java`测试用例
+
+
+
+### Mybatis执行流程
+
+- `Resources`获取加载全局配置文件
+- 实例化`SqlSessionFactoryBuilder`构造器
+- 解析配置文件流`XML ConfigBuilder`
+- `Configuration`所有的配置信息
+- `sqlSessionFactory`实例化
+- `transactional`事务管理
+- 创建`executor`执行器
+- 创建`sqlSession`实现CRUD（实现失败事务会回滚到事务管理当中）
+- 查看是否执行成功（查看失败事务会回滚到事务管理当中）
+- 提交事务
+- 关闭
 
 
 

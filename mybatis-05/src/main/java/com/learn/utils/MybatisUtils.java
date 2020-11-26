@@ -22,6 +22,7 @@ public class MybatisUtils {
     }
 
     public static SqlSession getSqlSession() {
-        return sqlSessionFactory.openSession();
+        //这里设置为true之后，接下来的增删改不再需要手动去提交，但是不建议使用，因为一旦出现问题，依旧会进行提交
+        return sqlSessionFactory.openSession(true);
     }
 }
