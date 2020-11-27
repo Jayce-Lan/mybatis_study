@@ -12,9 +12,9 @@
     @type 对应的返回类型
 -->
     <resultMap id="UserMap" type="User">
-<!--        @column 对应数据库中的列 @property 对应Java创建实体的属性-->
-        <result column="id" property="id"/>
-        <result column="name" property="name"/>
+<!--        @column 对应数据库中的列 @property 对应Java创建实体的属性，只需要映射数据库与对象名字不一样的属性即可-->
+<!--        <result column="id" property="id"/>-->
+<!--        <result column="name" property="name"/>-->
         <result column="pwd" property="password"/>
     </resultMap>
     <!--    使用结果集映射
@@ -25,5 +25,22 @@
          select * from  user where id = #{id}
 <!-- 方法1：在sql语句中将需要查询的类转为与自己项目中实体类对应的名字-->
 <!--        select id, name, pwd as password from user where id = #{id}-->
+    </select>
+
+    <!--
+			@select * from user where 1 = 1 and (id = 1 or id = 2 or id = 3);
+			@collection Java中传入的集合，我们可以传入一个map，而map中存在一个集合
+			@id sql中需要传入参数的属性
+			@open sql语句中的查询条件语句的开始====(
+			@separator sql语句中的分隔符====or
+			@close sql语句中查询条件语句的结尾====)
+	-->
+    <select id="queryUserForeach" parameterType="map" resultType="User">
+        select * from User
+        <where>
+            <foreach collection="oid" item="id" open="(" separator=" or " close=")">
+                id = #{id}
+            </foreach>
+        </where>
     </select>
 </mapper>

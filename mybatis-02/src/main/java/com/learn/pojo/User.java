@@ -1,6 +1,5 @@
 package com.learn.pojo;
 
-import org.apache.ibatis.type.Alias;
 
 //通过注解实现别名
 //@Alias("user")

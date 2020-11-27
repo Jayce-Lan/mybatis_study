@@ -2,20 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a762966a-a50f-43a9-b77b-2a99e3759f4d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mybatis-07/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-07/src/main/java/com/learn/dao/StudentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-07/src/main/java/com/learn/dao/TeacherMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-07/src/main/java/com/learn/pojo/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-07/src/main/java/com/learn/pojo/Teacher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-07/src/main/java/com/learn/utils/MybatisUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-07/src/main/resources/com/learn/dao/StudentMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-07/src/main/resources/com/learn/dao/TeacherMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-07/src/main/resources/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-07/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-07/src/test/java/MyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-08/mybatis-08.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-08/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-08/src/main/java/com/learn/dao/BlogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-08/src/main/java/com/learn/pojo/Blog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-08/src/main/java/com/learn/utils/IDUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-08/src/main/java/com/learn/utils/MybatisUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-08/src/main/resources/com/learn/dao/BlogMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-08/src/main/resources/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-08/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-08/src/test/java/MyTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-01/target/classes/com/learn/dao/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01/target/classes/com/learn/dao/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-01/target/classes/com/learn/dao/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01/target/classes/com/learn/dao/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-01/target/classes/com/learn/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01/target/classes/com/learn/pojo/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-01/target/classes/com/learn/utils/MybatisUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01/target/classes/com/learn/utils/MybatisUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-01/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01/target/classes/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-01/target/test-classes/com/learn/dao/UserMapperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01/target/test-classes/com/learn/dao/UserMapperTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-02/src/main/java/com/learn/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-02/src/main/java/com/learn/dao/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-02/src/main/java/com/learn/dao/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-02/src/main/java/com/learn/dao/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-02/src/main/java/com/learn/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-02/src/main/java/com/learn/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-02/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-02/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-03/src/main/java/com/learn/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-03/src/main/java/com/learn/dao/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-03/src/main/java/com/learn/dao/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-03/src/main/java/com/learn/dao/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-03/src/test/java/com/learn/dao/UserMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-03/src/test/java/com/learn/dao/UserMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-03/target/classes/com/learn/dao/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-03/target/classes/com/learn/dao/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-03/target/classes/com/learn/dao/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-03/target/classes/com/learn/dao/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-03/target/test-classes/com/learn/dao/UserMapperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-03/target/test-classes/com/learn/dao/UserMapperTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +104,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mybatis-07/src/main/java/com/learn" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mybatis-08/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -99,73 +114,92 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaProject\mybatis_study\mybatis-08\src\main\resources" />
+      <recent name="D:\JavaProject\mybatis_study\mybatis-08\src\main\java\com" />
+      <recent name="D:\JavaProject\mybatis_study\mybatis-08\src\main\java" />
       <recent name="D:\JavaProject\mybatis_study\mybatis-07\src\main\java\com\learn" />
       <recent name="D:\JavaProject\mybatis_study\mybatis-07\src\main\resources\com\learn\dao" />
-      <recent name="D:\JavaProject\mybatis_study\mybatis-07\src\main\resources" />
-      <recent name="D:\JavaProject\mybatis_study\mybatis-06\src\main\java\com\learn\dao" />
-      <recent name="D:\JavaProject\mybatis_study\mybatis-06\src\main\java\com" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.learn.utils" />
       <recent name="com.learn.pojo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JavaProject\mybatis_study\mybatis-02\src\main" />
       <recent name="D:\JavaProject\mybatis_study\mybatis-06\src\main\resources\com\learn\dao" />
       <recent name="D:\JavaProject\mybatis_study\mybatis-06\src\main\resources" />
       <recent name="D:\JavaProject\mybatis_study\mybatis-04\src\main\resources" />
       <recent name="D:\JavaProject\mybatis_study\mybatis-05\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MyTest.getTeacher2">
-    <configuration name="MyTest.getStudentMsg" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-06" />
+  <component name="RunManager" selected="JUnit.UserMapperTest.queryUserFoeach">
+    <configuration name="MyTest.queryBlogIF" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-08" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MyTest" />
-      <option name="METHOD_NAME" value="getStudentMsg" />
+      <option name="METHOD_NAME" value="queryBlogIF" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyTest.getStudentMsg2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-06" />
+    <configuration name="MyTest.updataBlog" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-08" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MyTest" />
-      <option name="METHOD_NAME" value="getStudentMsg2" />
+      <option name="METHOD_NAME" value="updataBlog" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyTest.getTeacher2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-07" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyTest" />
-      <option name="METHOD_NAME" value="getTeacher2" />
+    <configuration name="UserMapperTest.getUserById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.learn.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.learn.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.learn.dao.UserMapperTest" />
+      <option name="METHOD_NAME" value="getUserById" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyTest.getTeacherById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-07" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyTest" />
-      <option name="METHOD_NAME" value="getTeacherById" />
+    <configuration name="UserMapperTest.getUserList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-01" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.learn.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.learn.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.learn.dao.UserMapperTest" />
+      <option name="METHOD_NAME" value="getUserList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyTest.testDemo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-06" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyTest" />
-      <option name="METHOD_NAME" value="testDemo" />
+    <configuration name="UserMapperTest.queryUserFoeach" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-03" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.learn.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.learn.dao" />
+      <option name="MAIN_CLASS_NAME" value="com.learn.dao.UserMapperTest" />
+      <option name="METHOD_NAME" value="queryUserFoeach" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -173,11 +207,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MyTest.getTeacher2" />
-        <item itemvalue="JUnit.MyTest.getTeacherById" />
-        <item itemvalue="JUnit.MyTest.getStudentMsg2" />
-        <item itemvalue="JUnit.MyTest.getStudentMsg" />
-        <item itemvalue="JUnit.MyTest.testDemo" />
+        <item itemvalue="JUnit.UserMapperTest.queryUserFoeach" />
+        <item itemvalue="JUnit.UserMapperTest.getUserById" />
+        <item itemvalue="JUnit.UserMapperTest.getUserList" />
+        <item itemvalue="JUnit.MyTest.queryBlogIF" />
+        <item itemvalue="JUnit.MyTest.updataBlog" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +228,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@657e98f" type="9fbbdea:ServiceModel$ServiceNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@2d43fff7" type="9fbbdea:ServiceModel$ServiceNode" />
               </path>
             </expand>
             <select />
@@ -240,7 +274,15 @@
       <workItem from="1606377838311" duration="1534000" />
       <workItem from="1606379830381" duration="3450000" />
       <workItem from="1606441387906" duration="1280000" />
-      <workItem from="1606443174834" duration="1420000" />
+      <workItem from="1606443174834" duration="4089000" />
+      <workItem from="1606447492832" duration="1595000" />
+      <workItem from="1606449413679" duration="373000" />
+      <workItem from="1606449825530" duration="12000" />
+      <workItem from="1606449863780" duration="604000" />
+      <workItem from="1606457533355" duration="2739000" />
+      <workItem from="1606463274948" duration="4026000" />
+      <workItem from="1606467656072" duration="846000" />
+      <workItem from="1606468603650" duration="216000" />
     </task>
     <servers />
   </component>
@@ -261,83 +303,101 @@
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606443488881" />
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.679@0.0.1280.679" timestamp="1605958441838" />
-    <state x="446" y="23" key="#com.intellij.ide.util.MemberChooser" timestamp="1606442448606">
+    <state x="446" y="23" key="#com.intellij.ide.util.MemberChooser" timestamp="1606446599387">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
-    <state x="446" y="23" key="#com.intellij.ide.util.MemberChooser/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606442448606" />
+    <state x="446" y="23" key="#com.intellij.ide.util.MemberChooser/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606446599387" />
     <state x="446" y="23" key="#com.intellij.ide.util.MemberChooser/0.0.1280.679@0.0.1280.679" timestamp="1606013827737" />
+    <state x="308" y="264" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1606446177898">
+      <screen x="0" y="0" width="1280" height="679" />
+    </state>
+    <state x="308" y="264" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606446177898" />
     <state x="287" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606014204895">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
     <state x="287" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.679@0.0.1280.679" timestamp="1606014204895" />
-    <state x="371" y="86" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606375936660">
+    <state x="371" y="86" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606446253184">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
-    <state x="371" y="86" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606375936660" />
+    <state x="371" y="86" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606446253184" />
     <state x="371" y="86" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.679@0.0.1280.679" timestamp="1606013405058" />
     <state x="35" y="0" key="CommitChangelistDialog2" timestamp="1606380830792">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
     <state x="35" y="0" key="CommitChangelistDialog2/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606380830792" />
-    <state width="1237" height="311" key="GridCell.Tab.0.bottom" timestamp="1606444804934">
-      <screen x="0" y="0" width="1280" height="679" />
+    <state width="1237" height="287" key="GridCell.Tab.0.bottom" timestamp="1606468864198">
+      <screen x="1920" y="31" width="1280" height="689" />
     </state>
-    <state width="1237" height="311" key="GridCell.Tab.0.bottom/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606444804934" />
+    <state width="1237" height="387" key="GridCell.Tab.0.bottom/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606465705721" />
+    <state width="1237" height="287" key="GridCell.Tab.0.bottom/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606468864198" />
     <state width="1237" height="235" key="GridCell.Tab.0.bottom/0.0.1280.679@0.0.1280.679" timestamp="1606014659714" />
-    <state width="1237" height="311" key="GridCell.Tab.0.center" timestamp="1606444804934">
-      <screen x="0" y="0" width="1280" height="679" />
+    <state width="1237" height="287" key="GridCell.Tab.0.center" timestamp="1606468864198">
+      <screen x="1920" y="31" width="1280" height="689" />
     </state>
-    <state width="1237" height="311" key="GridCell.Tab.0.center/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606444804934" />
+    <state width="1237" height="387" key="GridCell.Tab.0.center/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606465705721" />
+    <state width="1237" height="287" key="GridCell.Tab.0.center/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606468864198" />
     <state width="1237" height="235" key="GridCell.Tab.0.center/0.0.1280.679@0.0.1280.679" timestamp="1606014659714" />
-    <state width="1237" height="311" key="GridCell.Tab.0.left" timestamp="1606444804934">
-      <screen x="0" y="0" width="1280" height="679" />
+    <state width="1237" height="287" key="GridCell.Tab.0.left" timestamp="1606468864198">
+      <screen x="1920" y="31" width="1280" height="689" />
     </state>
-    <state width="1237" height="311" key="GridCell.Tab.0.left/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606444804934" />
+    <state width="1237" height="387" key="GridCell.Tab.0.left/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606465705721" />
+    <state width="1237" height="287" key="GridCell.Tab.0.left/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606468864198" />
     <state width="1237" height="235" key="GridCell.Tab.0.left/0.0.1280.679@0.0.1280.679" timestamp="1606014659714" />
-    <state width="1237" height="311" key="GridCell.Tab.0.right" timestamp="1606444804934">
-      <screen x="0" y="0" width="1280" height="679" />
+    <state width="1237" height="287" key="GridCell.Tab.0.right" timestamp="1606468864198">
+      <screen x="1920" y="31" width="1280" height="689" />
     </state>
-    <state width="1237" height="311" key="GridCell.Tab.0.right/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606444804934" />
+    <state width="1237" height="387" key="GridCell.Tab.0.right/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606465705721" />
+    <state width="1237" height="287" key="GridCell.Tab.0.right/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606468864198" />
     <state width="1237" height="235" key="GridCell.Tab.0.right/0.0.1280.679@0.0.1280.679" timestamp="1606014659714" />
-    <state width="1237" height="311" key="GridCell.Tab.1.bottom" timestamp="1606444804934">
-      <screen x="0" y="0" width="1280" height="679" />
+    <state width="1237" height="287" key="GridCell.Tab.1.bottom" timestamp="1606468864199">
+      <screen x="1920" y="31" width="1280" height="689" />
     </state>
-    <state width="1237" height="311" key="GridCell.Tab.1.bottom/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606444804934" />
+    <state width="1237" height="387" key="GridCell.Tab.1.bottom/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606465705721" />
+    <state width="1237" height="287" key="GridCell.Tab.1.bottom/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606468864199" />
     <state width="1237" height="272" key="GridCell.Tab.1.bottom/0.0.1280.679@0.0.1280.679" timestamp="1606014659710" />
-    <state width="1237" height="311" key="GridCell.Tab.1.center" timestamp="1606444804934">
-      <screen x="0" y="0" width="1280" height="679" />
+    <state width="1237" height="287" key="GridCell.Tab.1.center" timestamp="1606468864198">
+      <screen x="1920" y="31" width="1280" height="689" />
     </state>
-    <state width="1237" height="311" key="GridCell.Tab.1.center/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606444804934" />
+    <state width="1237" height="387" key="GridCell.Tab.1.center/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606465705721" />
+    <state width="1237" height="287" key="GridCell.Tab.1.center/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606468864198" />
     <state width="1237" height="272" key="GridCell.Tab.1.center/0.0.1280.679@0.0.1280.679" timestamp="1606014659710" />
-    <state width="1237" height="311" key="GridCell.Tab.1.left" timestamp="1606444804934">
-      <screen x="0" y="0" width="1280" height="679" />
+    <state width="1237" height="287" key="GridCell.Tab.1.left" timestamp="1606468864198">
+      <screen x="1920" y="31" width="1280" height="689" />
     </state>
-    <state width="1237" height="311" key="GridCell.Tab.1.left/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606444804934" />
+    <state width="1237" height="387" key="GridCell.Tab.1.left/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606465705721" />
+    <state width="1237" height="287" key="GridCell.Tab.1.left/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606468864198" />
     <state width="1237" height="272" key="GridCell.Tab.1.left/0.0.1280.679@0.0.1280.679" timestamp="1606014659710" />
-    <state width="1237" height="311" key="GridCell.Tab.1.right" timestamp="1606444804934">
-      <screen x="0" y="0" width="1280" height="679" />
+    <state width="1237" height="287" key="GridCell.Tab.1.right" timestamp="1606468864198">
+      <screen x="1920" y="31" width="1280" height="689" />
     </state>
-    <state width="1237" height="311" key="GridCell.Tab.1.right/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606444804934" />
+    <state width="1237" height="387" key="GridCell.Tab.1.right/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606465705721" />
+    <state width="1237" height="287" key="GridCell.Tab.1.right/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606468864198" />
     <state width="1237" height="272" key="GridCell.Tab.1.right/0.0.1280.679@0.0.1280.679" timestamp="1606014659710" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1606380759443">
+    <state x="142" y="0" key="SettingsEditor" timestamp="1606464733234">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606380759443" />
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606464733234" />
     <state x="142" y="0" key="SettingsEditor/0.0.1280.679@0.0.1280.679" timestamp="1605884755791" />
-    <state x="325" y="163" key="com.intellij.ide.util.TipDialog" timestamp="1606443175769">
-      <screen x="0" y="0" width="1280" height="679" />
+    <state x="2245" y="196" key="com.intellij.ide.util.TipDialog" timestamp="1606468603898">
+      <screen x="1920" y="31" width="1280" height="689" />
     </state>
-    <state x="325" y="163" key="com.intellij.ide.util.TipDialog/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606443175769" />
+    <state x="325" y="163" key="com.intellij.ide.util.TipDialog/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606463275735" />
+    <state x="2245" y="196" key="com.intellij.ide.util.TipDialog/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606468603898" />
     <state x="325" y="163" key="com.intellij.ide.util.TipDialog/0.0.1280.679@0.0.1280.679" timestamp="1606011199800" />
     <state x="412" y="42" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1606010911215">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
     <state x="412" y="42" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.679@0.0.1280.679" timestamp="1606010911215" />
-    <state x="56" y="42" key="new project wizard" timestamp="1606441473674">
+    <state x="56" y="42" key="new project wizard" timestamp="1606446097482">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
-    <state x="56" y="42" key="new project wizard/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606441473674" />
+    <state x="56" y="42" key="new project wizard/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606446097482" />
     <state x="56" y="42" key="new project wizard/0.0.1280.679@0.0.1280.679" timestamp="1606013229582" />
+    <state x="2217" y="185" key="run.anything.popup" timestamp="1606467880716">
+      <screen x="1920" y="31" width="1280" height="689" />
+    </state>
+    <state x="297" y="151" key="run.anything.popup/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606457838920" />
+    <state x="2217" y="185" key="run.anything.popup/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606467880716" />
     <state x="624" y="-1" width="672" height="678" key="search.everywhere.popup" timestamp="1606381773340">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
@@ -349,6 +409,7 @@
     <SUITE FILE_PATH="coverage/mybatis_study$UserMapperTest_getUserList.ic" NAME="UserMapperTest.getUserList Coverage Results" MODIFIED="1606195285771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.learn.dao.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/mybatis_study$MyTest_addBlog.ic" NAME="MyTest.addBlog Coverage Results" MODIFIED="1606448493514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/mybatis_study$UserMapperTest_getUserList__1_.ic" NAME="UserMapperTest.getUserList (1) Coverage Results" MODIFIED="1605957868389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.learn.dao.*</FILTER>
     </SUITE>

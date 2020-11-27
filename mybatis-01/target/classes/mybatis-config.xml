@@ -4,8 +4,32 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <!--核心配置文件-->
 <configuration>
+    <!--引入外部配置文件-->
+    <properties resource="db.properties"/>
+    <!--值得注意的是，如果在这里也插入配置数据，并且和配置文件冲突，那么将会优先使用配置文件内的数据-->
+
+    <!--可以简化Mapper.xml文件中的代码的配置-->
+    <typeAliases>
+        <!--可以给实体类写别名-->
+<!--        <typeAlias type="com.learn.pojo.User" alias="User"/>-->
+        <!--可以扫描整个实体类包，那么它的别名为类目的首字母小写-->
+        <package name="com.learn.pojo"/>
+    </typeAliases>
+
     <environments default="development">
         <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <!--直接写入配置文件的键-->
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${user}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+
+        <!--这里可以配置多套文件，只需在上面的default=""选择和id相同的即可-->
+        <environment id="test1">
             <transactionManager type="JDBC"/>
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
@@ -18,6 +42,6 @@
     </environments>
     <!--每一个mapper.xml都需要再注册文件中进行注册-->
     <mappers>
-        <mapper resource="com/learn/dao/UserMapper.xml"/>
+        <mapper class="com.learn.dao.UserMapper"/>
     </mappers>
 </configuration>

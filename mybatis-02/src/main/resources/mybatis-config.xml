@@ -42,6 +42,6 @@
     </environments>
     <!--每一个mapper.xml都需要再注册文件中进行注册-->
     <mappers>
-        <mapper resource="com/learn/dao/UserMapper.xml"/>
+        <mapper class="com.learn.dao.UserMapper"/>
     </mappers>
 </configuration>

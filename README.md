@@ -323,3 +323,272 @@ public void getUserLike() {
 </select>
 ```
 
+
+
+## 关于多对一和一对多的问题
+
+- 关联：`association` 【多对一】
+- 集合：`collection` 【一对多】
+- `javaType` & `ofType`
+  - `javaType`：用于指定实体类中对象的属性
+  - `ofType`：用于指定映射到List或者集合中的pojo类型，泛型中的约束类型
+
+
+
+## 动态SQL
+
+> 根据不同条件生产不同的SQL语句
+
+
+
+### 字段名的转换
+
+在mybatis-config中配置如下设置，可以将数据库中的下划线变量转变为Java实体类属性中的驼峰命名
+
+```xml
+<setting name="mapUnderscoreToCamelCase" value="true"/>
+```
+
+
+
+### if
+
+在对应的`Mapper.xml`中配置以下文件，`test`当中写入`if`判断语句，这样可以提高该查询字段的复用性
+
+```xml
+<!--
+	@where 1=1 这里传入的1 = 1不影响查询结果，而且为后面的sql语句拼接提供了便利
+-->
+<select id="queryBlogIF" parameterType="map" resultType="Blog">
+    select * from blog where 1=1
+    <if test="title != null">
+        and title = #{title}
+    </if>
+    <if test="author != null">
+        and author = #{author}
+    </if>
+</select>
+
+<!--
+	使用where标签，可以替代上面的where 1 = 1的语句
+	若子句的开头为 “AND” 或 “OR”，where 元素也会将它们去除
+-->
+<select id="queryBlogIF" parameterType="map" resultType="Blog">
+    select * from blog
+    <where>
+        <if test="title != null">
+            and title = #{title}
+        </if>
+        <if test="author != null">
+            and author = #{author}
+        </if>
+    </where>
+</select>
+```
+
+
+
+### choose(when, otherwise)
+
+有时候，我们不想使用所有的条件，而只是想从多个条件中选择一个使用。针对这种情况，MyBatis 提供了 `choose` 元素，它有点像 Java 中的 `switch` 语句
+
+和if语句一样，test中写入判断条件，而`otherwise`类似于switch语句中的`default`
+
+```xml
+<select id="queryBlogChoose" parameterType="map" resultType="Blog">
+    select * from blog
+    <where>
+        <choose>
+            <when test="title != null">
+                title = #{title}
+            </when>
+            <when test="author != null">
+                and author = #{author}
+            </when>
+            <otherwise>
+                and views = #{views}
+            </otherwise>
+        </choose>
+    </where>
+</select>
+```
+
+
+
+### trim(where, set)
+
+如果 *where* 元素与你期望的不太一样，你也可以通过自定义 trim 元素来定制 *where* 元素的功能。比如，和 *where* 元素等价的自定义 trim 元素
+
+*prefixOverrides* 属性会忽略通过管道符分隔的文本序列（注意此例中的空格是必要的）。上述例子会移除所有 *prefixOverrides* 属性中指定的内容，并且插入 *prefix* 属性中指定的内容
+
+```xml
+<trim prefix="WHERE" prefixOverrides="AND |OR ">
+  ...
+</trim>
+
+<!--实例-->
+<select id="queryBlogIF" parameterType="map" resultType="Blog">
+    select * from blog
+    <trim prefix="WHERE" prefixOverrides="AND |OR ">
+        <if test="title != null">
+            and title = #{title}
+        </if>
+        <if test="author != null">
+            and author = #{author}
+        </if>
+    </trim>
+</select>
+
+<update id="updateAuthorIfNecessary">
+    update Author
+    <trim prefix="SET" suffixOverrides=",">
+        <if test="username != null">username=#{username},</if>
+        <if test="password != null">password=#{password},</if>
+        <if test="email != null">email=#{email},</if>
+        <if test="bio != null">bio=#{bio}</if>
+    </trim>
+    where id=#{id}
+</update>
+```
+
+
+
+`set` 元素可以用于动态包含需要更新的列，忽略其它不更新的列
+
+```xml
+<update id="updataBlog" parameterType="map">
+    update blog
+    <set>
+        <if test="title != null">
+            title = #{title},
+        </if>
+        <if test="author != null">
+            author = #{author}
+        </if>
+    </set>
+    where id = #{id}
+</update>
+```
+
+
+
+### SQL片段
+
+有时候，我们会将一些重复的代码片段提取出来并复用
+
+> 实例
+
+```xml
+<!--这里把这块常用的if判断代码片段提取了出来，并自定义id为if-title-author-->
+<sql id="if-title-author">
+    <if test="title != null">
+        and title = #{title}
+    </if>
+    <if test="author != null">
+        and author = #{author}
+    </if>
+</sql>
+<select id="queryBlogIF" parameterType="map" resultType="Blog">
+    select * from blog where 1=1
+    <where>
+        <!--在where标签中使用id为if-title-author的代码片段-->
+        <include refid="if-title-author"></include>
+    </where>
+</select>
+```
+
+注意事项：
+
+- 最好基于单表来定义SQL片段
+- 在片段中不要出现where标签
+
+
+
+### foreach
+
+> 动态 SQL 的另一个常见使用场景是对集合进行遍历（尤其是在构建 IN 条件语句的时候）
+
+可以达成的效果
+
+```mysql
+mysql> select * from user where 1 = 1 and (id = 1 or id = 2 or id = 3);
++----+--------+--------+
+| id | name   | pwd    |
++----+--------+--------+
+|  1 | 张强   | 777888 |
+|  2 | 李四   | 123456 |
+|  3 | 王五   | 123456 |
++----+--------+--------+
+3 rows in set (0.01 sec)
+```
+
+语句解析
+
+```xml
+<select id="selectPostIn" resultType="domain.blog.Post">
+  SELECT *
+  FROM POST P
+  WHERE ID in
+  <foreach item="item" index="index" collection="list"
+      open="(" separator="," close=")">
+        #{item}
+  </foreach>
+</select>
+```
+
+> 实例
+
+`Mapper`接口中创建一个方法，查询用户
+
+```java
+List<User> queryUserForeach(Map map);
+```
+
+`Mapper.xml`文件中的语句
+
+```xml
+<select id="queryUserForeach" parameterType="map" resultType="User">
+	select * from User
+    <where>
+        <!--
+			@select * from user where 1 = 1 and (id = 1 or id = 2 or id = 3);
+			@collection Java中传入的集合，我们可以传入一个map，而map中存在一个集合
+			@id sql中需要传入参数的属性
+			@open sql语句中的查询条件语句的开始，如果有and之类的字符，后面必须添加空格--and (
+			@separator sql语句中的分隔符--or
+			@close sql语句中查询条件语句的结尾--)
+		-->
+    	<foreach collection="oid" item="id" open="and (" separator="or" close=")">
+            <!--这里传入的id为遍历出来的id-->
+        	id = #{id}
+        </foreach>
+    </where>
+</select>
+```
+
+`Test`类中的测试
+
+```java
+@Test
+public void queryUserForeach() {
+    SqlSession sqlSession = MybatisUtils.getSqlSession();
+    UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+
+    //创建一个存入id的集合
+    ArrayList<Integer> arrayList = new ArrayList<Integer>();
+    arrayList.add(1);
+    arrayList.add(2);
+    ...
+
+
+    Map map = new HashMap();
+    map.put("oid", arrayList);
+
+    List<User> userList = userMapper.queryUserForeach(map);
+
+    for (User user : userList) {
+        System.out.println(user);
+    }
+}
+```
+
