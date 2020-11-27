@@ -1,37 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a762966a-a50f-43a9-b77b-2a99e3759f4d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mybatis-08/mybatis-08.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-08/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-08/src/main/java/com/learn/dao/BlogMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-08/src/main/java/com/learn/pojo/Blog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-08/src/main/java/com/learn/utils/IDUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-08/src/main/java/com/learn/utils/MybatisUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-08/src/main/resources/com/learn/dao/BlogMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-08/src/main/resources/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-08/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-08/src/test/java/MyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-01/target/classes/com/learn/dao/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01/target/classes/com/learn/dao/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-01/target/classes/com/learn/dao/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01/target/classes/com/learn/dao/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-01/target/classes/com/learn/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01/target/classes/com/learn/pojo/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-01/target/classes/com/learn/utils/MybatisUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01/target/classes/com/learn/utils/MybatisUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-01/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01/target/classes/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-01/target/test-classes/com/learn/dao/UserMapperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-01/target/test-classes/com/learn/dao/UserMapperTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-02/src/main/java/com/learn/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-02/src/main/java/com/learn/dao/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-02/src/main/java/com/learn/dao/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-02/src/main/java/com/learn/dao/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-02/src/main/java/com/learn/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-02/src/main/java/com/learn/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-02/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-02/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-03/src/main/java/com/learn/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-03/src/main/java/com/learn/dao/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-03/src/main/java/com/learn/dao/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-03/src/main/java/com/learn/dao/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-03/src/test/java/com/learn/dao/UserMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-03/src/test/java/com/learn/dao/UserMapperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-03/target/classes/com/learn/dao/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-03/target/classes/com/learn/dao/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-03/target/classes/com/learn/dao/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-03/target/classes/com/learn/dao/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-03/target/test-classes/com/learn/dao/UserMapperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-03/target/test-classes/com/learn/dao/UserMapperTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,19 +46,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IgnoredFileRootStore">
-    <option name="generatedRoots">
-      <set>
-        <option value="D:\JavaProject\mybatis_study\.idea" />
-      </set>
-    </option>
-  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\maven\apache-maven-3.6.3\repository" />
-        <option name="mavenHome" value="D:/maven/apache-maven-3.6.3" />
-        <option name="userSettingsFile" value="D:/maven/apache-maven-3.6.3/conf/ettings.xml" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../maven/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="$PROJECT_DIR$/../../maven/apache-maven-3.6.3/conf/ettings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -93,13 +61,13 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -136,7 +104,7 @@
       <recent name="D:\JavaProject\mybatis_study\mybatis-05\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserMapperTest.queryUserFoeach">
+  <component name="RunManager">
     <configuration name="MyTest.queryBlogIF" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis-08" />
       <option name="PACKAGE_NAME" value="" />
@@ -205,38 +173,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.UserMapperTest.queryUserFoeach" />
-        <item itemvalue="JUnit.UserMapperTest.getUserById" />
-        <item itemvalue="JUnit.UserMapperTest.getUserList" />
-        <item itemvalue="JUnit.MyTest.queryBlogIF" />
-        <item itemvalue="JUnit.MyTest.updataBlog" />
-      </list>
-    </recent_temporary>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="com.intellij.database.console.session.MessageBusSession@2d43fff7" type="9fbbdea:ServiceModel$ServiceNode" />
-              </path>
-            </expand>
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="StructureViewFactory">
     <option name="AUTOSCROLL_MODE" value="false" />
     <option name="ACTIVE_ACTIONS" value=",VISIBILITY_SORTER,SHOW_LAMBDA,SHOW_ANONYMOUS,ALPHA_COMPARATOR,SHOW_INHERITED" />
@@ -282,7 +220,7 @@
       <workItem from="1606457533355" duration="2739000" />
       <workItem from="1606463274948" duration="4026000" />
       <workItem from="1606467656072" duration="846000" />
-      <workItem from="1606468603650" duration="216000" />
+      <workItem from="1606468603650" duration="482000" />
     </task>
     <servers />
   </component>
@@ -325,53 +263,53 @@
       <screen x="0" y="0" width="1280" height="679" />
     </state>
     <state x="35" y="0" key="CommitChangelistDialog2/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606380830792" />
-    <state width="1237" height="287" key="GridCell.Tab.0.bottom" timestamp="1606468864198">
+    <state width="1237" height="287" key="GridCell.Tab.0.bottom" timestamp="1606469086308">
       <screen x="1920" y="31" width="1280" height="689" />
     </state>
     <state width="1237" height="387" key="GridCell.Tab.0.bottom/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606465705721" />
-    <state width="1237" height="287" key="GridCell.Tab.0.bottom/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606468864198" />
+    <state width="1237" height="287" key="GridCell.Tab.0.bottom/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606469086308" />
     <state width="1237" height="235" key="GridCell.Tab.0.bottom/0.0.1280.679@0.0.1280.679" timestamp="1606014659714" />
-    <state width="1237" height="287" key="GridCell.Tab.0.center" timestamp="1606468864198">
+    <state width="1237" height="287" key="GridCell.Tab.0.center" timestamp="1606469086308">
       <screen x="1920" y="31" width="1280" height="689" />
     </state>
     <state width="1237" height="387" key="GridCell.Tab.0.center/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606465705721" />
-    <state width="1237" height="287" key="GridCell.Tab.0.center/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606468864198" />
+    <state width="1237" height="287" key="GridCell.Tab.0.center/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606469086308" />
     <state width="1237" height="235" key="GridCell.Tab.0.center/0.0.1280.679@0.0.1280.679" timestamp="1606014659714" />
-    <state width="1237" height="287" key="GridCell.Tab.0.left" timestamp="1606468864198">
+    <state width="1237" height="287" key="GridCell.Tab.0.left" timestamp="1606469086308">
       <screen x="1920" y="31" width="1280" height="689" />
     </state>
     <state width="1237" height="387" key="GridCell.Tab.0.left/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606465705721" />
-    <state width="1237" height="287" key="GridCell.Tab.0.left/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606468864198" />
+    <state width="1237" height="287" key="GridCell.Tab.0.left/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606469086308" />
     <state width="1237" height="235" key="GridCell.Tab.0.left/0.0.1280.679@0.0.1280.679" timestamp="1606014659714" />
-    <state width="1237" height="287" key="GridCell.Tab.0.right" timestamp="1606468864198">
+    <state width="1237" height="287" key="GridCell.Tab.0.right" timestamp="1606469086308">
       <screen x="1920" y="31" width="1280" height="689" />
     </state>
     <state width="1237" height="387" key="GridCell.Tab.0.right/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606465705721" />
-    <state width="1237" height="287" key="GridCell.Tab.0.right/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606468864198" />
+    <state width="1237" height="287" key="GridCell.Tab.0.right/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606469086308" />
     <state width="1237" height="235" key="GridCell.Tab.0.right/0.0.1280.679@0.0.1280.679" timestamp="1606014659714" />
-    <state width="1237" height="287" key="GridCell.Tab.1.bottom" timestamp="1606468864199">
+    <state width="1237" height="287" key="GridCell.Tab.1.bottom" timestamp="1606469086308">
       <screen x="1920" y="31" width="1280" height="689" />
     </state>
     <state width="1237" height="387" key="GridCell.Tab.1.bottom/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606465705721" />
-    <state width="1237" height="287" key="GridCell.Tab.1.bottom/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606468864199" />
+    <state width="1237" height="287" key="GridCell.Tab.1.bottom/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606469086308" />
     <state width="1237" height="272" key="GridCell.Tab.1.bottom/0.0.1280.679@0.0.1280.679" timestamp="1606014659710" />
-    <state width="1237" height="287" key="GridCell.Tab.1.center" timestamp="1606468864198">
+    <state width="1237" height="287" key="GridCell.Tab.1.center" timestamp="1606469086308">
       <screen x="1920" y="31" width="1280" height="689" />
     </state>
     <state width="1237" height="387" key="GridCell.Tab.1.center/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606465705721" />
-    <state width="1237" height="287" key="GridCell.Tab.1.center/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606468864198" />
+    <state width="1237" height="287" key="GridCell.Tab.1.center/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606469086308" />
     <state width="1237" height="272" key="GridCell.Tab.1.center/0.0.1280.679@0.0.1280.679" timestamp="1606014659710" />
-    <state width="1237" height="287" key="GridCell.Tab.1.left" timestamp="1606468864198">
+    <state width="1237" height="287" key="GridCell.Tab.1.left" timestamp="1606469086308">
       <screen x="1920" y="31" width="1280" height="689" />
     </state>
     <state width="1237" height="387" key="GridCell.Tab.1.left/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606465705721" />
-    <state width="1237" height="287" key="GridCell.Tab.1.left/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606468864198" />
+    <state width="1237" height="287" key="GridCell.Tab.1.left/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606469086308" />
     <state width="1237" height="272" key="GridCell.Tab.1.left/0.0.1280.679@0.0.1280.679" timestamp="1606014659710" />
-    <state width="1237" height="287" key="GridCell.Tab.1.right" timestamp="1606468864198">
+    <state width="1237" height="287" key="GridCell.Tab.1.right" timestamp="1606469086308">
       <screen x="1920" y="31" width="1280" height="689" />
     </state>
     <state width="1237" height="387" key="GridCell.Tab.1.right/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606465705721" />
-    <state width="1237" height="287" key="GridCell.Tab.1.right/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606468864198" />
+    <state width="1237" height="287" key="GridCell.Tab.1.right/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606469086308" />
     <state width="1237" height="272" key="GridCell.Tab.1.right/0.0.1280.679@0.0.1280.679" timestamp="1606014659710" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1606464733234">
       <screen x="0" y="0" width="1280" height="679" />
@@ -403,15 +341,5 @@
     </state>
     <state x="624" y="-1" width="672" height="678" key="search.everywhere.popup/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606381773340" />
     <state x="624" y="-1" width="672" height="678" key="search.everywhere.popup/0.0.1280.679@0.0.1280.679" timestamp="1605956109793" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/mybatis_study$All_in_mybatis_04.ic" NAME="All in mybatis-04 Coverage Results" MODIFIED="1606282299683" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/mybatis_study$UserMapperTest_getUserList.ic" NAME="UserMapperTest.getUserList Coverage Results" MODIFIED="1606195285771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.learn.dao.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/mybatis_study$MyTest_addBlog.ic" NAME="MyTest.addBlog Coverage Results" MODIFIED="1606448493514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/mybatis_study$UserMapperTest_getUserList__1_.ic" NAME="UserMapperTest.getUserList (1) Coverage Results" MODIFIED="1605957868389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.learn.dao.*</FILTER>
-    </SUITE>
   </component>
 </project>

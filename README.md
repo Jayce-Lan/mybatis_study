@@ -150,6 +150,14 @@
 </mappers>
 ```
 
+> 也可以使用class进行注册
+
+```xml
+<mappers>
+    <mapper class="com.learn.dao.UserMapper"/>
+</mappers>
+```
+
 
 
 ## CRUD
@@ -218,36 +226,6 @@
 </insert>
 ```
 
-
-
-#### update
-
-> 修改语句
-
-```xml
-<!--修改用户-->
-<update id="updateUser" parameterType="com.learn.pojo.User">
-    update user set name = #{name}, pwd = #{pwd} where id = #{id};
-</update>
-```
-
-
-
-#### delete
-
-> 删除语句
-
-```xml
-<!--删除用户-->
-<delete id="deleteUser" parameterType="int">
-    delete from user where  id = #{id};
-</delete>
-```
-
-
-
-## Map实现模糊查改
-
 > 使用Map集合插入语句可以使得在UserMapper.xml中的sql语句插入字符不再受到User这个类的限制
 >
 > 假设数据表中的字段过多，建议使用Map
@@ -284,12 +262,46 @@ sql语句中的字段只需要和Map集合的键相同即可
 </insert>
 ```
 
-#### 注意的点
+
+
+#### update
+
+> 修改语句
+
+```xml
+<!--修改用户-->
+<update id="updateUser" parameterType="com.learn.pojo.User">
+    update user set name = #{name}, pwd = #{pwd} where id = #{id};
+</update>
+```
+
+
+
+#### delete
+
+> 删除语句
+
+```xml
+<!--删除用户-->
+<delete id="deleteUser" parameterType="int">
+    delete from user where  id = #{id};
+</delete>
+```
+
+
+
+> 值得注意的点
 
 - Map传递参数，直接在sql中取出key即可【`parameterType="map"`】
 - 对象传递参数，直接在sql语句中填写对象的属性即可【`parameterType="Object"`】
 - 只有一个基本类型参数的情况下，可以直接在sql中取到【`parameterType="int"`，或者留空不写】
 - 多个参数建议使用Map或注解
+
+
+
+## Map实现模糊查改
+
+
 
 
 
@@ -578,7 +590,7 @@ public void queryUserForeach() {
     ArrayList<Integer> arrayList = new ArrayList<Integer>();
     arrayList.add(1);
     arrayList.add(2);
-    ...
+    ...//可以添加更多的检索条件
 
 
     Map map = new HashMap();
