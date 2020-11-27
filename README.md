@@ -253,7 +253,7 @@
 > 假设数据表中的字段过多，建议使用Map
 
 ```java
- @Test
+ @MyTest
     public void addUser2() {
         SqlSession sqlSession = null;
         try {
@@ -298,7 +298,7 @@ sql语句中的字段只需要和Map集合的键相同即可
 > Java代码运行时执行通配符，不要将模糊查询写死在xml中，否则会容易造成SQL注入
 
 ```java
-@Test
+@MyTest
 public void getUserLike() {
     SqlSession sqlSession = null;
     sqlSession = MybatisUtils.getSqlSession();
