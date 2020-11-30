@@ -1,6 +1,9 @@
 package com.learn.pojo;
 
-public class User {
+import java.io.Serializable;
+
+//引入Serializable接口，开启序列化
+public class User implements Serializable {
     private int id;
     private String name;
     private String pwd;

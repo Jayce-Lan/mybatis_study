@@ -643,3 +643,175 @@ Mybatis系统中默认定义了两级缓存：**一级缓存**和**二级缓存*
 
 ### 二级缓存
 
+- 二级缓存也叫全局缓存，一级缓存作用域太低，所以诞生了二级缓存
+- 基于`namespace`级别的缓存，一个命名空间对应一个二级缓存
+- 工作机制
+  - 一个会话查询一条数据，这个数据就会被放在当前会话的一级缓存当中
+  - 如果当前会话关闭，这个会话对应的一级缓存也就失效；但是会话关闭，一级缓存中的数据会被保存到二级缓存当中
+  - 新的会话查询信息，可以从二级缓存中获取内容
+  - 不同的mapper查出的数据会放在字节对应的缓存中（map）
+
+默认情况下，只启用了本地的会话缓存，它仅仅对一个会话中的数据进行缓存。 要启用全局的二级缓存，只需要在你的 SQL 映射文件中添加一行`<cache/>`
+
+> 实例
+
+```xml
+<!--
+	@eviction 缓存模式
+	@flushInterval 每隔...ms刷新
+	@size 缓存达到该长度后会自动清理
+	@readOnly
+-->
+<cache
+  eviction="FIFO"	
+  flushInterval="60000"
+  size="512"
+  readOnly="true"/>
+```
+
+
+
+#### 使用二级缓存的步骤
+
+- 开启全局缓存
+
+  - 在`mybatis-config.xml`中插入如下语句
+
+  - ```xml
+    <settings>
+        <setting name="cacheEnabled" value="true"/>
+    </settings>
+    ```
+
+- 在对应的Mapper.xml中开启`<cache/>`标签，开启二级缓存
+
+  - 当然，我们也可以在对应的sql语句标签中加入属性`useCache`来开启/关闭缓存
+
+  - ```xml
+    <select id="getUserById" resultType="user" parameterType="int" useCache="false">
+        select * from user where id = #{id}
+    </select>
+    ```
+
+- 如果我们缓存设置中不设置属性，只设置了`<cache/>`，那么，我们需要在实体类中序列化，否则会出现报错
+
+  - ```java
+    public class User implements Serializable
+    ```
+
+
+
+> 实例
+
+```java
+@Test
+public void testCache() {
+    SqlSession sqlSession1 = MybatisUtils.getSqlSession();
+    SqlSession sqlSession2 = MybatisUtils.getSqlSession();
+
+    UserMapper userMapper1 = sqlSession1.getMapper(UserMapper.class);
+    User user1 = userMapper1.getUserById(1);
+    System.out.println(user1);
+
+    sqlSession1.close();//二级缓存在一级缓存结束后开启，因此需要先关闭一级缓存
+
+    UserMapper userMapper2 = sqlSession2.getMapper(UserMapper.class);//在这里会去读取二级缓存中的数据，不会重新加载
+    User user2 = userMapper2.getUserById(1);
+    System.out.println(user2);
+
+    sqlSession2.close();
+}
+```
+
+
+
+- 只要开启了二级缓存，那么在同一个`Mapper`中就会生效
+- 所有数据都会存储在一级缓存中
+- 只有会话提交或者关闭才会启用二级缓存
+
+
+
+### 自定义缓存-ehcache
+
+> ehcache是一种广泛使用的开源Java分布式缓存，主要面向通用缓存
+
+#### 使用流程
+
+- 导包
+
+  - pom.xml文件中导入如下包：
+
+  - ```xml
+    <dependencies>
+        <!--导入自定义缓存包-->
+        <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-ehcache -->
+        <dependency>
+            <groupId>org.mybatis.caches</groupId>
+            <artifactId>mybatis-ehcache</artifactId>
+            <version>1.1.0</version>
+        </dependency>
+    </dependencies>
+    ```
+
+- 配置Mapper.xml文件中的`<cache>`标签实现缓存
+
+  - `<cache type="org.mybatis.caches.ehcache.EhcacheCache"/>`
+
+- 导入`ehcache.xml`配置文件
+
+  - ```xml
+    <?xml version="1.0" encoding="UTF-8"?>
+    <ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd"
+             updateCheck="false">
+        <!--
+           diskStore：为缓存路径，ehcache分为内存和磁盘两级，此属性定义磁盘的缓存位置。参数解释如下：
+           user.home – 用户主目录
+           user.dir  – 用户当前工作目录
+           java.io.tmpdir – 默认临时文件路径
+         -->
+        <diskStore path="./tmpdir/Tmp_Ehcache"/>
+        <!--
+           defaultCache：默认缓存策略，当ehcache找不到定义的缓存时，则使用这个缓存策略。只能定义一个。
+         -->
+        <!--
+          name:缓存名称。
+          maxElementsInMemory:缓存最大数目
+          maxElementsOnDisk：硬盘最大缓存个数。
+          eternal:对象是否永久有效，一但设置了，timeout将不起作用。
+          overflowToDisk:是否保存到磁盘，当系统宕机时
+          timeToIdleSeconds:设置对象在失效前的允许闲置时间（单位：秒）。仅当eternal=false对象不是永久有效时使用，可选属性，默认值是0，也就是可闲置时间无穷大。
+          timeToLiveSeconds:设置对象在失效前允许存活时间（单位：秒）。最大时间介于创建时间和失效时间之间。仅当eternal=false对象不是永久有效时使用，默认是0.，也就是对象存活时间无穷大。
+          diskPersistent：是否缓存虚拟机重启期数据 Whether the disk store persists between restarts of the Virtual Machine. The default value is false.
+          diskSpoolBufferSizeMB：这个参数设置DiskStore（磁盘缓存）的缓存区大小。默认是30MB。每个Cache都应该有自己的一个缓冲区。
+          diskExpiryThreadIntervalSeconds：磁盘失效线程运行时间间隔，默认是120秒。
+          memoryStoreEvictionPolicy：当达到maxElementsInMemory限制时，Ehcache将会根据指定的策略去清理内存。默认策略是LRU（最近最少使用）。你可以设置为FIFO（先进先出）或是LFU（较少使用）。
+          clearOnFlush：内存数量最大时是否清除。
+          memoryStoreEvictionPolicy:可选策略有：LRU（最近最少使用，默认策略）、FIFO（先进先出）、LFU（最少访问次数）。
+          FIFO，first in first out，这个是大家最熟的，先进先出。
+          LFU， Less Frequently Used，就是上面例子中使用的策略，直白一点就是讲一直以来最少被使用的。如上面所讲，缓存的元素有一个hit属性，hit值最小的将会被清出缓存。
+          LRU，Least Recently Used，最近最少使用的，缓存的元素有一个时间戳，当缓存容量满了，而又需要腾出地方来缓存新的元素的时候，那么现有缓存元素中时间戳离当前时间最远的元素将被清出缓存。
+       -->
+        <defaultCache
+                eternal="false"
+                maxElementsInMemory="10000"
+                overflowToDisk="false"
+                diskPersistent="false"
+                timeToIdleSeconds="1800"
+                timeToLiveSeconds="259200"
+                memoryStoreEvictionPolicy="LRU"/>
+    
+        <cache
+                name="cloud_user"
+                eternal="false"
+                maxElementsInMemory="5000"
+                overflowToDisk="false"
+                diskPersistent="false"
+                timeToIdleSeconds="1800"
+                timeToLiveSeconds="1800"
+                memoryStoreEvictionPolicy="LRU"/>
+    
+    </ehcache>
+    ```
+
+当前实际工作中使用缓存一般通过**Redis**实现

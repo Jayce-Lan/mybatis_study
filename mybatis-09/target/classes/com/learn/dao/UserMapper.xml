@@ -4,11 +4,19 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!--命名空间namespace绑定一个指定的Dao/Mapper接口-->
 <mapper namespace="com.learn.dao.UserMapper">
+<!--    在当前mapper文件中开启二级缓存-->
+<!--    <cache eviction="FIFO"-->
+<!--            flushInterval="60000"-->
+<!--            size="512"-->
+<!--            readOnly="true"/>-->
+<!--    如果只是单纯这样开启缓存，那么将会没有序列化，我们需要在实体类中开启序列化-->
+    <cache type="org.mybatis.caches.ehcache.EhcacheCache"/>
+
     <select id="getUserList" resultType="user">
         select * from user
     </select>
 
-    <select id="getUserById" resultType="user" parameterType="int">
+    <select id="getUserById" resultType="user" parameterType="int" useCache="true">
         select * from user where id = #{id}
     </select>
 
