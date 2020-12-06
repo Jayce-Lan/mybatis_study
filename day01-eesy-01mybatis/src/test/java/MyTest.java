@@ -1,4 +1,5 @@
 import com.learn.dao.IUserDao;
+import com.learn.dao.impl.IUserDaoImpl;
 import com.learn.domain.User;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -29,6 +30,24 @@ public class MyTest {
         }
         //释放资源
         sqlSession.close();
+        inputStream.close();
+    }
+
+    /**
+     * 使用dao的实现类去实现查询方法
+     */
+    @Test
+    public void findAllByImpl() throws IOException {
+        //读取配置文件
+        InputStream inputStream = Resources.getResourceAsStream("mybatis-config.xml");
+        //创建SqlSessionFactory工厂
+        SqlSessionFactoryBuilder builder = new SqlSessionFactoryBuilder();
+        SqlSessionFactory factory = builder.build(inputStream);
+        IUserDao iUserDao = new IUserDaoImpl(factory);
+        List<User> users = iUserDao.findAll();
+        for (User user : users) {
+            System.out.println(user);
+        }
         inputStream.close();
     }
 }
