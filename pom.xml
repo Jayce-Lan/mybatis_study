@@ -18,6 +18,8 @@
         <module>mybatis-07</module>
         <module>mybatis-08</module>
         <module>mybatis-09</module>
+        <module>day01-eesy-01mybatis</module>
+        <module>day01-eesy-02mybatis_annotation</module>
     </modules>
 
     <!--导入依赖-->
@@ -43,27 +45,10 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.14</version>
+        </dependency>
     </dependencies>
-
-    <!--在build中配置resources，来防止我们资源到处失败问题-->
-    <build>
-        <resources>
-            <resource>
-                <directory>src/main/resources</directory>
-                <includes>
-                    <include>**/*.properties</include>
-                    <include>**/*.xml</include>
-                </includes>
-                <filtering>true</filtering>
-            </resource>
-            <resource>
-                <directory>src/main/java</directory>
-                <includes>
-                    <include>**/*.properties</include>
-                    <include>**/*.xml</include>
-                </includes>
-                <filtering>true</filtering>
-            </resource>
-        </resources>
-    </build>
 </project>
