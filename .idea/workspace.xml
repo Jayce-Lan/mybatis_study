@@ -5,25 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a762966a-a50f-43a9-b77b-2a99e3759f4d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day03-eesy-02mybatis-dynamicSQL/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-datasourceAndTx/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/src/main/java/com/learn/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-datasourceAndTx/src/main/java/com/learn/dao/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/src/main/java/com/learn/domain/QueryVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-datasourceAndTx/src/main/java/com/learn/domain/QueryVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/src/main/java/com/learn/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-datasourceAndTx/src/main/java/com/learn/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/src/main/resources/com/learn/dao/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-datasourceAndTx/src/main/resources/com/learn/dao/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-datasourceAndTx/src/main/resources/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-datasourceAndTx/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-datasourceAndTx/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/src/test/java/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-datasourceAndTx/src/test/java/MyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/target/classes/com/learn/dao/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-datasourceAndTx/target/classes/com/learn/dao/UserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/target/classes/com/learn/dao/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-datasourceAndTx/target/classes/com/learn/dao/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/target/classes/com/learn/domain/QueryVo.class" beforeDir="false" afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-datasourceAndTx/target/classes/com/learn/domain/QueryVo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/target/classes/com/learn/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-datasourceAndTx/target/classes/com/learn/domain/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/target/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-datasourceAndTx/target/classes/jdbc.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-datasourceAndTx/target/classes/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-datasourceAndTx/target/classes/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/target/test-classes/MyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-datasourceAndTx/target/test-classes/MyTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03-eesy-02mybatis-dynamicSQL/src/main/java/com/learn/dao/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03-eesy-02mybatis-dynamicSQL/src/main/java/com/learn/domain/QueryVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03-eesy-02mybatis-dynamicSQL/src/main/java/com/learn/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03-eesy-02mybatis-dynamicSQL/src/main/resources/com/learn/dao/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03-eesy-02mybatis-dynamicSQL/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03-eesy-02mybatis-dynamicSQL/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03-eesy-02mybatis-dynamicSQL/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03-eesy-02mybatis-dynamicSQL/src/test/java/MyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +84,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/src/main/resources/com/learn/dao" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/day03-eesy-02mybatis-dynamicSQL/src/main/java/com" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -123,29 +113,39 @@
       <recent name="com.learn.pojo" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaProject\mybatis_study\day03-eesy-02mybatis-dynamicSQL\src\main\java\com" />
+      <recent name="D:\JavaProject\mybatis_study\day03-eesy-02mybatis-dynamicSQL\src\main\resources\com\learn\dao" />
+      <recent name="D:\JavaProject\mybatis_study\day03-eesy-02mybatis-dynamicSQL\src\main\resources" />
       <recent name="D:\JavaProject\mybatis_study\day03-eesy-01mybatis-01datasourceAndTx\src\main\resources\com\learn\dao" />
       <recent name="D:\JavaProject\mybatis_study\day03-eesy-01mybatis-01datasourceAndTx\src\main\java" />
-      <recent name="D:\JavaProject\mybatis_study\day03-eesy-01mybatis-01datasourceAndTx\src\main\resources" />
-      <recent name="D:\JavaProject\mybatis_study\day02-eesy-02mybatis-Dao\src\main\resources\com\learn\dao" />
-      <recent name="D:\JavaProject\mybatis_study\day02-eesy-02mybatis-Dao\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MyTest.saveUser">
-    <configuration name="MyTest.findALl" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day02-eesy-01mybatis-CRUD" />
+  <component name="RunManager" selected="JUnit.MyTest.findUserByIds">
+    <configuration name="MyTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day03-eesy-02mybatis-dynamicSQL" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MyTest" />
-      <option name="METHOD_NAME" value="findALl" />
+      <option name="METHOD_NAME" value="findAll" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyTest.findAll (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day02-eesy-02mybatis-Dao" />
+    <configuration name="MyTest.findByCondition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day03-eesy-02mybatis-dynamicSQL" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MyTest" />
-      <option name="METHOD_NAME" value="findAll" />
+      <option name="METHOD_NAME" value="findByCondition" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyTest.findUserByIds" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day03-eesy-02mybatis-dynamicSQL" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyTest" />
+      <option name="METHOD_NAME" value="findUserByIds" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -171,23 +171,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyTest.updateUser (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day02-eesy-02mybatis-Dao" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyTest" />
-      <option name="METHOD_NAME" value="updateUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyTest.findUserByIds" />
+        <item itemvalue="JUnit.MyTest.findByCondition" />
+        <item itemvalue="JUnit.MyTest.findAll" />
         <item itemvalue="JUnit.MyTest.saveUser" />
         <item itemvalue="JUnit.MyTest.test" />
-        <item itemvalue="JUnit.MyTest.findALl" />
-        <item itemvalue="JUnit.MyTest.findAll (1)" />
-        <item itemvalue="JUnit.MyTest.updateUser (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -266,7 +256,7 @@
       <workItem from="1607231929238" duration="5894000" />
       <workItem from="1607301739528" duration="11366000" />
       <workItem from="1607320157587" duration="2260000" />
-      <workItem from="1607324716212" duration="7406000" />
+      <workItem from="1607324716212" duration="10821000" />
     </task>
     <servers />
   </component>
@@ -287,12 +277,12 @@
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606443488881" />
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.679@0.0.1280.679" timestamp="1605958441838" />
-    <state x="446" y="23" key="#com.intellij.ide.util.MemberChooser" timestamp="1607325404273">
+    <state x="446" y="23" key="#com.intellij.ide.util.MemberChooser" timestamp="1607334410383">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
     <state x="446" y="23" key="#com.intellij.ide.util.MemberChooser/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606446599387" />
     <state x="2366" y="54" key="#com.intellij.ide.util.MemberChooser/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606704885868" />
-    <state x="446" y="23" key="#com.intellij.ide.util.MemberChooser/0.0.1280.679@0.0.1280.679" timestamp="1607325404273" />
+    <state x="446" y="23" key="#com.intellij.ide.util.MemberChooser/0.0.1280.679@0.0.1280.679" timestamp="1607334410383" />
     <state x="308" y="264" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1607329795296">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
@@ -323,54 +313,54 @@
       <screen x="0" y="0" width="1280" height="679" />
     </state>
     <state x="35" y="0" key="CommitChangelistDialog2/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606380830792" />
-    <state width="1237" height="521" key="GridCell.Tab.0.bottom" timestamp="1607331875368">
+    <state width="1237" height="399" key="GridCell.Tab.0.bottom" timestamp="1607335729738">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
     <state width="1237" height="387" key="GridCell.Tab.0.bottom/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606465705721" />
     <state width="1237" height="391" key="GridCell.Tab.0.bottom/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606705205087" />
-    <state width="1237" height="521" key="GridCell.Tab.0.bottom/0.0.1280.679@0.0.1280.679" timestamp="1607331875368" />
-    <state width="1237" height="521" key="GridCell.Tab.0.center" timestamp="1607331875368">
+    <state width="1237" height="399" key="GridCell.Tab.0.bottom/0.0.1280.679@0.0.1280.679" timestamp="1607335729738" />
+    <state width="1237" height="399" key="GridCell.Tab.0.center" timestamp="1607335729737">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
     <state width="1237" height="387" key="GridCell.Tab.0.center/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606465705721" />
     <state width="1237" height="391" key="GridCell.Tab.0.center/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606705205087" />
-    <state width="1237" height="521" key="GridCell.Tab.0.center/0.0.1280.679@0.0.1280.679" timestamp="1607331875368" />
-    <state width="1237" height="521" key="GridCell.Tab.0.left" timestamp="1607331875368">
+    <state width="1237" height="399" key="GridCell.Tab.0.center/0.0.1280.679@0.0.1280.679" timestamp="1607335729737" />
+    <state width="1237" height="399" key="GridCell.Tab.0.left" timestamp="1607335729737">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
     <state width="1237" height="387" key="GridCell.Tab.0.left/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606465705721" />
     <state width="1237" height="391" key="GridCell.Tab.0.left/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606705205087" />
-    <state width="1237" height="521" key="GridCell.Tab.0.left/0.0.1280.679@0.0.1280.679" timestamp="1607331875368" />
-    <state width="1237" height="521" key="GridCell.Tab.0.right" timestamp="1607331875368">
+    <state width="1237" height="399" key="GridCell.Tab.0.left/0.0.1280.679@0.0.1280.679" timestamp="1607335729737" />
+    <state width="1237" height="399" key="GridCell.Tab.0.right" timestamp="1607335729738">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
     <state width="1237" height="387" key="GridCell.Tab.0.right/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606465705721" />
     <state width="1237" height="391" key="GridCell.Tab.0.right/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606705205087" />
-    <state width="1237" height="521" key="GridCell.Tab.0.right/0.0.1280.679@0.0.1280.679" timestamp="1607331875368" />
-    <state width="1237" height="521" key="GridCell.Tab.1.bottom" timestamp="1607331875369">
+    <state width="1237" height="399" key="GridCell.Tab.0.right/0.0.1280.679@0.0.1280.679" timestamp="1607335729738" />
+    <state width="1237" height="399" key="GridCell.Tab.1.bottom" timestamp="1607335729738">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
     <state width="1237" height="387" key="GridCell.Tab.1.bottom/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606465705721" />
     <state width="1237" height="391" key="GridCell.Tab.1.bottom/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606705205087" />
-    <state width="1237" height="521" key="GridCell.Tab.1.bottom/0.0.1280.679@0.0.1280.679" timestamp="1607331875369" />
-    <state width="1237" height="521" key="GridCell.Tab.1.center" timestamp="1607331875368">
+    <state width="1237" height="399" key="GridCell.Tab.1.bottom/0.0.1280.679@0.0.1280.679" timestamp="1607335729738" />
+    <state width="1237" height="399" key="GridCell.Tab.1.center" timestamp="1607335729738">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
     <state width="1237" height="387" key="GridCell.Tab.1.center/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606465705721" />
     <state width="1237" height="391" key="GridCell.Tab.1.center/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606705205087" />
-    <state width="1237" height="521" key="GridCell.Tab.1.center/0.0.1280.679@0.0.1280.679" timestamp="1607331875368" />
-    <state width="1237" height="521" key="GridCell.Tab.1.left" timestamp="1607331875368">
+    <state width="1237" height="399" key="GridCell.Tab.1.center/0.0.1280.679@0.0.1280.679" timestamp="1607335729738" />
+    <state width="1237" height="399" key="GridCell.Tab.1.left" timestamp="1607335729738">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
     <state width="1237" height="387" key="GridCell.Tab.1.left/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606465705721" />
     <state width="1237" height="391" key="GridCell.Tab.1.left/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606705205087" />
-    <state width="1237" height="521" key="GridCell.Tab.1.left/0.0.1280.679@0.0.1280.679" timestamp="1607331875368" />
-    <state width="1237" height="521" key="GridCell.Tab.1.right" timestamp="1607331875369">
+    <state width="1237" height="399" key="GridCell.Tab.1.left/0.0.1280.679@0.0.1280.679" timestamp="1607335729738" />
+    <state width="1237" height="399" key="GridCell.Tab.1.right" timestamp="1607335729738">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
     <state width="1237" height="387" key="GridCell.Tab.1.right/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606465705721" />
     <state width="1237" height="391" key="GridCell.Tab.1.right/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606705205087" />
-    <state width="1237" height="521" key="GridCell.Tab.1.right/0.0.1280.679@0.0.1280.679" timestamp="1607331875369" />
+    <state width="1237" height="399" key="GridCell.Tab.1.right/0.0.1280.679@0.0.1280.679" timestamp="1607335729738" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1607309780411">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
@@ -398,12 +388,12 @@
     </state>
     <state x="297" y="151" key="run.anything.popup/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606457838920" />
     <state x="2217" y="185" key="run.anything.popup/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606467880716" />
-    <state x="624" y="-1" width="672" height="678" key="search.everywhere.popup" timestamp="1607329948284">
+    <state x="606" y="-1" width="672" height="678" key="search.everywhere.popup" timestamp="1607335656365">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
     <state x="624" y="-1" width="672" height="678" key="search.everywhere.popup/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606381773340" />
     <state x="2544" y="31" width="672" height="688" key="search.everywhere.popup/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606703135896" />
-    <state x="624" y="-1" width="672" height="678" key="search.everywhere.popup/0.0.1280.679@0.0.1280.679" timestamp="1607329948284" />
+    <state x="606" y="-1" width="672" height="678" key="search.everywhere.popup/0.0.1280.679@0.0.1280.679" timestamp="1607335656365" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/mybatis_study$MyTest_findALl.ic" NAME="MyTest.findALl Coverage Results" MODIFIED="1607308749740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

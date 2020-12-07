@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.learn.dao.UserMapper">
+    <resultMap id="userMap" type="user">
+        <id property="id" column="id"/>
+        <result property="username" column="username"/>
+        <result property="sex" column="sex"/>
+        <result property="address" column="address"/>
+        <result property="birthday" column="birthday"/>
+    </resultMap>
+
+    <!--抽取重复id-->
+    <!--
+        使用<sql id="***">标签定义重复的sql语句
+        使用<include refid="***"/>引入重复的sql语句
+    -->
+    <sql id="defaultUser">
+        select * from user
+    </sql>
+
+    <select id="findAll" resultMap="userMap">
+        <include refid="defaultUser"/>
+     </select>
+
+    <select id="findById" parameterType="java.lang.Integer" resultMap="userMap">
+        <include refid="defaultUser"/>
+        where id = #{id};
+    </select>
+
+    <select id="findByName" parameterType="java.lang.String" resultMap="userMap">
+        <include refid="defaultUser"/>
+        where username like #{username}
+    </select>
+
+    <select id="findUserByQueryVo" parameterType="QueryVo" resultMap="userMap">
+        <include refid="defaultUser"/>
+        where username like #{user.username}
+    </select>
+
+    <!--根据条件查询-->
+    <select id="findUserByCondition" parameterType="user" resultMap="userMap">
+        <include refid="defaultUser"/>
+        <where>
+            <if test="username != null">
+                and username = #{username}
+            </if>
+            <if test="sex != null">
+                and sex = #{sex}
+            </if>
+        </where>
+    </select>
+
+    <select id="findUserByIds" resultMap="userMap" parameterType="queryVo">
+        <include refid="defaultUser"/>
+        <where>
+            <if test="ids != null and ids.size() > 0">
+                <foreach collection="ids" open="and id in (" close=")" item="userid" separator=",">
+                    <!--这里传入的参数与item一致-->
+                    #{userid}
+                </foreach>
+            </if>
+        </where>
+    </select>
+</mapper>
