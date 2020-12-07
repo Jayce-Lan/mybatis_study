@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<mapper namespace="com.com.learn.dao.IUserDao">
+    <select id="findAll" resultType="com.com.learn.domain.User">
+        select * from user;
+    </select>
+</mapper>
