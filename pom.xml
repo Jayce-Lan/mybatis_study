@@ -25,6 +25,7 @@
         <module>day02-eesy-01mybatis-other_name</module>
         <module>day02-eesy-02mybatis-Dao</module>
         <module>day03-eesy-01mybatis-01datasourceAndTx</module>
+        <module>day03-eesy-02mybatis-dynamicSQL</module>
     </modules>
 
     <!--导入依赖-->

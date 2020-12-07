@@ -5,17 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a762966a-a50f-43a9-b77b-2a99e3759f4d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/src/main/java/com/learn/dao/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/src/main/java/com/learn/domain/QueryVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/src/main/java/com/learn/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/src/main/resources/com/learn/dao/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/src/test/java/MyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day03-eesy-02mybatis-dynamicSQL/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-datasourceAndTx/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/src/main/java/com/learn/dao/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-datasourceAndTx/src/main/java/com/learn/dao/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/src/main/java/com/learn/domain/QueryVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-datasourceAndTx/src/main/java/com/learn/domain/QueryVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/src/main/java/com/learn/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-datasourceAndTx/src/main/java/com/learn/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/src/main/resources/com/learn/dao/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-datasourceAndTx/src/main/resources/com/learn/dao/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/src/main/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-datasourceAndTx/src/main/resources/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-datasourceAndTx/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-datasourceAndTx/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/src/test/java/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-datasourceAndTx/src/test/java/MyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/target/classes/com/learn/dao/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-datasourceAndTx/target/classes/com/learn/dao/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/target/classes/com/learn/dao/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-datasourceAndTx/target/classes/com/learn/dao/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/target/classes/com/learn/domain/QueryVo.class" beforeDir="false" afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-datasourceAndTx/target/classes/com/learn/domain/QueryVo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/target/classes/com/learn/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-datasourceAndTx/target/classes/com/learn/domain/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/target/classes/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-datasourceAndTx/target/classes/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/target/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-datasourceAndTx/target/classes/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-datasourceAndTx/target/classes/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day03-eesy-01mybatis-01datasourceAndTx/target/test-classes/MyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/day03-eesy-01mybatis-datasourceAndTx/target/test-classes/MyTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -145,7 +152,7 @@
       </method>
     </configuration>
     <configuration name="MyTest.saveUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day03-eesy-01mybatis-01datasourceAndTx" />
+      <module name="day03-eesy-01mybatis-datasourceAndTx" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MyTest" />
       <option name="METHOD_NAME" value="saveUser" />
@@ -155,7 +162,7 @@
       </method>
     </configuration>
     <configuration name="MyTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day03-eesy-01mybatis-01datasourceAndTx" />
+      <module name="day03-eesy-01mybatis-datasourceAndTx" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MyTest" />
       <option name="METHOD_NAME" value="test" />
@@ -259,7 +266,7 @@
       <workItem from="1607231929238" duration="5894000" />
       <workItem from="1607301739528" duration="11366000" />
       <workItem from="1607320157587" duration="2260000" />
-      <workItem from="1607324716212" duration="7114000" />
+      <workItem from="1607324716212" duration="7406000" />
     </task>
     <servers />
   </component>
@@ -380,12 +387,12 @@
       <screen x="0" y="0" width="1280" height="679" />
     </state>
     <state x="412" y="42" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.679@0.0.1280.679" timestamp="1606010911215" />
-    <state x="56" y="27" key="new project wizard" timestamp="1607329736199">
+    <state x="56" y="27" key="new project wizard" timestamp="1607332316225">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
     <state x="56" y="42" key="new project wizard/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606446097482" />
     <state x="1976" y="58" key="new project wizard/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606709197745" />
-    <state x="56" y="27" key="new project wizard/0.0.1280.679@0.0.1280.679" timestamp="1607329736199" />
+    <state x="56" y="27" key="new project wizard/0.0.1280.679@0.0.1280.679" timestamp="1607332316225" />
     <state x="2217" y="185" key="run.anything.popup" timestamp="1606467880716">
       <screen x="1920" y="31" width="1280" height="689" />
     </state>
