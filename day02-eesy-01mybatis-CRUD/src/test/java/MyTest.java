@@ -1,4 +1,5 @@
 import com.learn.dao.UserMapper;
+import com.learn.domain.QueryVo;
 import com.learn.domain.User;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -92,5 +93,20 @@ public class MyTest {
     public void findTotal() {
         int count = userMapper.findTotal();
         System.out.println(count);
+    }
+
+    @Test
+    public void findUserByQueryVo() {
+        QueryVo queryVo = new QueryVo();
+        User user = new User();
+        String uname = "老";
+        uname = "%" + uname + "%";
+        user.setUsername(uname);
+        queryVo.setUser(user);
+        List<User> users = userMapper.findUserByQueryVo(queryVo);
+
+        for (User user1 : users) {
+            System.out.println(user1);
+        }
     }
 }

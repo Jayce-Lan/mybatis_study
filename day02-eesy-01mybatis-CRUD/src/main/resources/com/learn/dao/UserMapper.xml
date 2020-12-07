@@ -40,4 +40,9 @@
     <select id="findTotal" resultType="int">
         select count(id) from user;
     </select>
+
+    <select id="findUserByQueryVo" parameterType="com.learn.domain.QueryVo" resultType="com.learn.domain.User">
+        select * from user
+        where username like #{user.username}
+    </select>
 </mapper>

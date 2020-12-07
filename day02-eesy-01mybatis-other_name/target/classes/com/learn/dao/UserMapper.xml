@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.learn.dao.UserMapper">
+    <!--
+        当数据库的字段名与Java对象中定义的属性名不一致时，可以使用以下方法搜索出对应字段
+        1.使用别名，将sql语句改成如下（解决效率最高）：
+            select id as userId, username as userName, sex as userSex, address as userAddress, birthday as userBirthday
+            from user;
+        2.配置查询结果的列明与实体对象属性名对应关系
+    -->
+    <resultMap id="userMap" type="com.learn.domain.User">
+        <!--主键字段的对应-->
+        <!--
+            @property 对象的属性，由于对应的Java的属性，因此严格区分大小写
+            @column 数据库中的列名
+        -->
+        <id property="userId" column="id"/>
+        <!--非主键字段的对应-->
+        <result property="userName" column="username"/>
+        <result property="userSex" column="sex"/>
+        <result property="userAddress" column="address"/>
+        <result property="userBirthday" column="birthday"/>
+    </resultMap>
+    <select id="findAll" resultMap="userMap">
+        select * from user;
+        <!--select id as userId, username as userName, sex as userSex, address as userAddress, birthday as userBirthday
+        from user;-->
+     </select>
+    <update id="updateUser" parameterType="com.learn.domain.User">
+        update user set username = #{userName}, address = #{userAddress}, sex= #{userSex}, birthday = #{userBirthday}
+        where id = #{userId};
+    </update>
+</mapper>
