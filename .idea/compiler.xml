@@ -6,22 +6,22 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="day03-eesy-01mybatis-datasourceAndTx" />
         <module name="day01-eesy-02mybatis_annotation" />
         <module name="day03-eesy-02mybatis-dynamicSQL" />
         <module name="day01-eesy-01mybatis" />
         <module name="day02-eesy-01mybatis-CRUD" />
-        <module name="day02-eesy-01mybatis-other_name" />
-        <module name="mybatis-02" />
-        <module name="mybatis-09" />
+        <module name="day02-eesy-02mybatis-Dao" />
         <module name="mybatis-08" />
+        <module name="mybatis-09" />
+        <module name="day02-eesy-01mybatis-other_name" />
         <module name="mybatis-07" />
         <module name="mybatis-06" />
         <module name="mybatis-05" />
         <module name="mybatis-04" />
         <module name="mybatis-03" />
-        <module name="day02-eesy-02mybatis-Dao" />
+        <module name="mybatis-02" />
         <module name="day01-eesy-03mybatis_design" />
+        <module name="day03-eesy-03myabtis-one_to_more" />
       </profile>
       <profile name="Annotation profile for mybatis_study" enabled="true">
         <sourceOutputDir name="../mybatis-02/target/generated-sources/annotations" />
@@ -30,5 +30,8 @@
         <module name="mybatis-01" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="day03-eesy-01mybatis-datasourceAndTx" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
