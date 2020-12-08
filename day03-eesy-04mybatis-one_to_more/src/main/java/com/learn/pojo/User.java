@@ -2,6 +2,7 @@ package com.learn.pojo;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 public class User implements Serializable {
     private Integer id;
@@ -9,6 +10,17 @@ public class User implements Serializable {
     private String sex;
     private String address;
     private Date birthday;
+
+    //一对多关系映射，主表实体类包含从表集合
+    private List<Account> accounts;
+
+    public List<Account> getAccounts() {
+        return accounts;
+    }
+
+    public void setAccounts(List<Account> accounts) {
+        this.accounts = accounts;
+    }
 
     public Integer getId() {
         return id;

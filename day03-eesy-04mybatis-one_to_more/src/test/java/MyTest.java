@@ -1,6 +1,7 @@
 import com.learn.dao.AccountMapper;
 import com.learn.dao.UserMapper;
 import com.learn.pojo.Account;
+import com.learn.pojo.User;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
@@ -37,6 +38,15 @@ public class MyTest {
         List<Account> accountList = accountMapper.findAll();
         for (Account account : accountList) {
             System.out.println(account);
+        }
+    }
+
+    @Test
+    public void findAllUser() {
+        List<User> userList = userMapper.findAll();
+        for (User user : userList) {
+            System.out.println(user);
+            System.out.println(user.getAccounts());
         }
     }
 }

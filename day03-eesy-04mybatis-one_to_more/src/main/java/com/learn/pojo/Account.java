@@ -7,7 +7,7 @@ public class Account implements Serializable {
     private Integer uid;
     private Double money;
 
-    //从表实体包含一个主表实体对象的引用
+    //多对一关系映射从表实体包含一个主表实体对象的引用
     private User user;
 
     public User getUser() {
