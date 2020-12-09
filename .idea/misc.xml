@@ -10,6 +10,8 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/day03-04mybatis-one_to_more/pom.xml" />
+        <option value="$PROJECT_DIR$/day03-05mybatis-more_to_more/pom.xml" />
+        <option value="$PROJECT_DIR$/day03-eesy-05maybatis-more_to_more/pom.xml" />
       </set>
     </option>
   </component>

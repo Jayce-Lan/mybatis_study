@@ -29,6 +29,9 @@
         <module>day03-eesy-03myabtis-one_to_more</module>
         <module>day03-04mybatis-one_to_more</module>
         <module>day03-eesy-04mybatis-one_to_more</module>
+        <module>day03-05mybatis-more_to_more</module>
+        <module>day03-eesy-05maybatis-more_to_more</module>
+        <module>day03-eesy-05mybatis-more_to_more</module>
     </modules>
 
     <!--导入依赖-->
