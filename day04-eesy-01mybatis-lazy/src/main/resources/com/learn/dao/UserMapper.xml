@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.learn.dao.UserMapper">
+    <resultMap id="userMap" type="user">
+        <id property="id" column="id"/>
+        <result property="username" column="username"/>
+        <result property="sex" column="sex"/>
+        <result property="birthday" column="birthday"/>
+        <result property="address" column="address"/>
+        <!--
+            一对多实现懒加载
+            column 传给了用户id数据
+        -->
+        <collection property="accountList" column="id" ofType="account" select="com.learn.dao.AccountMapper.getAccountByUserId"/>
+    </resultMap>
+
+    <select id="getUserList" resultMap="userMap">
+        select * from user
+    </select>
+
+    <select id="getUserById" resultType="user" parameterType="Integer">
+        select * from user
+        where id = #{id}
+    </select>
+</mapper>

@@ -32,6 +32,7 @@
         <module>day03-05mybatis-more_to_more</module>
         <module>day03-eesy-05maybatis-more_to_more</module>
         <module>day03-eesy-05mybatis-more_to_more</module>
+        <module>day04-eesy-01mybatis-lazy</module>
     </modules>
 
     <!--导入依赖-->

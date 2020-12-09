@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.learn.dao.AccountMapper">
+    <resultMap id="accountMap" type="account">
+        <id property="id" column="id"/>
+        <result property="uid" column="uid"/>
+        <result property="money" column="money"/>
+        <!--
+            一对一实现延迟加载，在用户不需要的情况下，不会加载多余字段
+            select 查询用户的唯一标识（全类名+方法）
+            column 根据id查询用户时，所需的参数值(也即是这个唯一标识所需传入的数据)
+        -->
+        <association property="user" column="uid" javaType="user" select="com.learn.dao.UserMapper.getUserById"/>
+    </resultMap>
+
+    <select id="getAccountList" resultMap="accountMap">
+        select * from account
+    </select>
+
+    <select id="getAccountByUserId" resultType="account" parameterType="Integer">
+        select * from account
+        where uid = #{uid}
+    </select>
+</mapper>
