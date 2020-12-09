@@ -5,17 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a762966a-a50f-43a9-b77b-2a99e3759f4d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/day04-eesy-01mybatis-lazy/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day04-eesy-01mybatis-lazy/src/main/java/com/learn/dao/AccountMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day04-eesy-01mybatis-lazy/src/main/java/com/learn/dao/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day04-eesy-01mybatis-lazy/src/main/java/com/learn/pojo/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day04-eesy-01mybatis-lazy/src/main/java/com/learn/pojo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day04-eesy-01mybatis-lazy/src/main/resources/com/learn/dao/AccountMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day04-eesy-01mybatis-lazy/src/main/resources/com/learn/dao/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day04-eesy-01mybatis-lazy/src/main/resources/jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day04-eesy-01mybatis-lazy/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day04-eesy-01mybatis-lazy/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day04-eesy-01mybatis-lazy/src/test/java/MyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04-eesy-02mybatis-cache/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04-eesy-02mybatis-cache/src/main/java/com/learn/dao/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04-eesy-02mybatis-cache/src/main/java/com/learn/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04-eesy-02mybatis-cache/src/main/resources/com/learn/dao/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04-eesy-02mybatis-cache/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04-eesy-02mybatis-cache/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04-eesy-02mybatis-cache/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day04-eesy-02mybatis-cache/src/test/java/MyTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
@@ -56,8 +53,8 @@
         <option value="Tag Library Descriptor" />
         <option value="HTML File" />
         <option value="FxmlFile" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -90,7 +87,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/day04-eesy-01mybatis-lazy/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/day04-eesy-02mybatis-cache/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -103,6 +100,21 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaProject\mybatis_study\day04-eesy-02mybatis-cache\src\main\resources" />
+      <recent name="D:\JavaProject\mybatis_study\day04-eesy-01mybatis-lazy\src\main\resources" />
+      <recent name="D:\JavaProject\mybatis_study\day03-eesy-05mybatis-more_to_more\src\main\resources" />
+      <recent name="D:\JavaProject\mybatis_study\day03-eesy-04mybatis-one_to_more\src\main\java" />
+      <recent name="D:\JavaProject\mybatis_study\day03-eesy-04mybatis-one_to_more\src\main\resources\com\learn\dao" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.learn.dao.impl" />
+      <recent name="com.learn.utils" />
+      <recent name="com.learn.pojo" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\JavaProject\mybatis_study\day01-eesy-03mybatis_design\src\main\resources\com\learn" />
       <recent name="D:\JavaProject\mybatis_study\mybatis-02\src\main" />
@@ -110,38 +122,13 @@
       <recent name="D:\JavaProject\mybatis_study\mybatis-06\src\main\resources" />
       <recent name="D:\JavaProject\mybatis_study\mybatis-04\src\main\resources" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.learn.dao.impl" />
-      <recent name="com.learn.utils" />
-      <recent name="com.learn.pojo" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\JavaProject\mybatis_study\day04-eesy-01mybatis-lazy\src\main\resources" />
-      <recent name="D:\JavaProject\mybatis_study\day03-eesy-05mybatis-more_to_more\src\main\resources" />
-      <recent name="D:\JavaProject\mybatis_study\day03-eesy-04mybatis-one_to_more\src\main\java" />
-      <recent name="D:\JavaProject\mybatis_study\day03-eesy-04mybatis-one_to_more\src\main\resources\com\learn\dao" />
-      <recent name="D:\JavaProject\mybatis_study\day03-eesy-04mybatis-one_to_more\src\main\resources" />
-    </key>
   </component>
-  <component name="RunManager" selected="JUnit.MyTest.getUserList (1)">
+  <component name="RunManager" selected="JUnit.MyTest.getUserList (2)">
     <configuration name="MyTest.getAccountList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="day04-eesy-01mybatis-lazy" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MyTest" />
       <option name="METHOD_NAME" value="getAccountList" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyTest.getRoleList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day03-eesy-05mybatis-more_to_more" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyTest" />
-      <option name="METHOD_NAME" value="getRoleList" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -167,6 +154,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyTest.getUserList (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day04-eesy-02mybatis-cache" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyTest" />
+      <option name="METHOD_NAME" value="getUserList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MyTest.getUserList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="day03-eesy-05mybatis-more_to_more" />
       <option name="PACKAGE_NAME" value="" />
@@ -179,11 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyTest.getUserList (2)" />
         <item itemvalue="JUnit.MyTest.getUserList (1)" />
         <item itemvalue="JUnit.MyTest.getAccountList" />
         <item itemvalue="JUnit.MyTest.getUserById" />
         <item itemvalue="JUnit.MyTest.getUserList" />
-        <item itemvalue="JUnit.MyTest.getRoleList" />
       </list>
     </recent_temporary>
   </component>
@@ -268,7 +265,7 @@
       <workItem from="1607405418544" duration="659000" />
       <workItem from="1607474294305" duration="5049000" />
       <workItem from="1607484181385" duration="3059000" />
-      <workItem from="1607503646150" duration="1686000" />
+      <workItem from="1607503646150" duration="2822000" />
     </task>
     <servers />
   </component>
@@ -289,12 +286,12 @@
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606443488881" />
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.679@0.0.1280.679" timestamp="1605958441838" />
-    <state x="446" y="23" key="#com.intellij.ide.util.MemberChooser" timestamp="1607485650556">
+    <state x="446" y="23" key="#com.intellij.ide.util.MemberChooser" timestamp="1607506057217">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
     <state x="446" y="23" key="#com.intellij.ide.util.MemberChooser/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606446599387" />
     <state x="2366" y="54" key="#com.intellij.ide.util.MemberChooser/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606704885868" />
-    <state x="446" y="23" key="#com.intellij.ide.util.MemberChooser/0.0.1280.679@0.0.1280.679" timestamp="1607485650556" />
+    <state x="446" y="23" key="#com.intellij.ide.util.MemberChooser/0.0.1280.679@0.0.1280.679" timestamp="1607506057217" />
     <state x="308" y="264" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1607395630405">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
@@ -325,54 +322,54 @@
       <screen x="0" y="0" width="1280" height="679" />
     </state>
     <state x="35" y="0" key="CommitChangelistDialog2/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606380830792" />
-    <state width="1237" height="485" key="GridCell.Tab.0.bottom" timestamp="1607505485189">
+    <state width="1237" height="315" key="GridCell.Tab.0.bottom" timestamp="1607506526925">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
     <state width="1237" height="387" key="GridCell.Tab.0.bottom/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606465705721" />
     <state width="1237" height="391" key="GridCell.Tab.0.bottom/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606705205087" />
-    <state width="1237" height="485" key="GridCell.Tab.0.bottom/0.0.1280.679@0.0.1280.679" timestamp="1607505485189" />
-    <state width="1237" height="485" key="GridCell.Tab.0.center" timestamp="1607505485189">
+    <state width="1237" height="315" key="GridCell.Tab.0.bottom/0.0.1280.679@0.0.1280.679" timestamp="1607506526925" />
+    <state width="1237" height="315" key="GridCell.Tab.0.center" timestamp="1607506526924">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
     <state width="1237" height="387" key="GridCell.Tab.0.center/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606465705721" />
     <state width="1237" height="391" key="GridCell.Tab.0.center/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606705205087" />
-    <state width="1237" height="485" key="GridCell.Tab.0.center/0.0.1280.679@0.0.1280.679" timestamp="1607505485189" />
-    <state width="1237" height="485" key="GridCell.Tab.0.left" timestamp="1607505485189">
+    <state width="1237" height="315" key="GridCell.Tab.0.center/0.0.1280.679@0.0.1280.679" timestamp="1607506526924" />
+    <state width="1237" height="315" key="GridCell.Tab.0.left" timestamp="1607506526924">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
     <state width="1237" height="387" key="GridCell.Tab.0.left/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606465705721" />
     <state width="1237" height="391" key="GridCell.Tab.0.left/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606705205087" />
-    <state width="1237" height="485" key="GridCell.Tab.0.left/0.0.1280.679@0.0.1280.679" timestamp="1607505485189" />
-    <state width="1237" height="485" key="GridCell.Tab.0.right" timestamp="1607505485189">
+    <state width="1237" height="315" key="GridCell.Tab.0.left/0.0.1280.679@0.0.1280.679" timestamp="1607506526924" />
+    <state width="1237" height="315" key="GridCell.Tab.0.right" timestamp="1607506526925">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
     <state width="1237" height="387" key="GridCell.Tab.0.right/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606465705721" />
     <state width="1237" height="391" key="GridCell.Tab.0.right/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606705205087" />
-    <state width="1237" height="485" key="GridCell.Tab.0.right/0.0.1280.679@0.0.1280.679" timestamp="1607505485189" />
-    <state width="1237" height="485" key="GridCell.Tab.1.bottom" timestamp="1607505485190">
+    <state width="1237" height="315" key="GridCell.Tab.0.right/0.0.1280.679@0.0.1280.679" timestamp="1607506526925" />
+    <state width="1237" height="315" key="GridCell.Tab.1.bottom" timestamp="1607506526925">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
     <state width="1237" height="387" key="GridCell.Tab.1.bottom/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606465705721" />
     <state width="1237" height="391" key="GridCell.Tab.1.bottom/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606705205087" />
-    <state width="1237" height="485" key="GridCell.Tab.1.bottom/0.0.1280.679@0.0.1280.679" timestamp="1607505485190" />
-    <state width="1237" height="485" key="GridCell.Tab.1.center" timestamp="1607505485189">
+    <state width="1237" height="315" key="GridCell.Tab.1.bottom/0.0.1280.679@0.0.1280.679" timestamp="1607506526925" />
+    <state width="1237" height="315" key="GridCell.Tab.1.center" timestamp="1607506526925">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
     <state width="1237" height="387" key="GridCell.Tab.1.center/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606465705721" />
     <state width="1237" height="391" key="GridCell.Tab.1.center/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606705205087" />
-    <state width="1237" height="485" key="GridCell.Tab.1.center/0.0.1280.679@0.0.1280.679" timestamp="1607505485189" />
-    <state width="1237" height="485" key="GridCell.Tab.1.left" timestamp="1607505485189">
+    <state width="1237" height="315" key="GridCell.Tab.1.center/0.0.1280.679@0.0.1280.679" timestamp="1607506526925" />
+    <state width="1237" height="315" key="GridCell.Tab.1.left" timestamp="1607506526925">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
     <state width="1237" height="387" key="GridCell.Tab.1.left/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606465705721" />
     <state width="1237" height="391" key="GridCell.Tab.1.left/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606705205087" />
-    <state width="1237" height="485" key="GridCell.Tab.1.left/0.0.1280.679@0.0.1280.679" timestamp="1607505485189" />
-    <state width="1237" height="485" key="GridCell.Tab.1.right" timestamp="1607505485190">
+    <state width="1237" height="315" key="GridCell.Tab.1.left/0.0.1280.679@0.0.1280.679" timestamp="1607506526925" />
+    <state width="1237" height="315" key="GridCell.Tab.1.right" timestamp="1607506526925">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
     <state width="1237" height="387" key="GridCell.Tab.1.right/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606465705721" />
     <state width="1237" height="391" key="GridCell.Tab.1.right/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606705205087" />
-    <state width="1237" height="485" key="GridCell.Tab.1.right/0.0.1280.679@0.0.1280.679" timestamp="1607505485190" />
+    <state width="1237" height="315" key="GridCell.Tab.1.right/0.0.1280.679@0.0.1280.679" timestamp="1607506526925" />
     <state width="280" height="477" key="HiddenNamespacesPopup" timestamp="1607475330915">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
@@ -393,12 +390,12 @@
       <screen x="0" y="0" width="1280" height="679" />
     </state>
     <state x="412" y="42" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1280.679@0.0.1280.679" timestamp="1606010911215" />
-    <state x="56" y="27" key="new project wizard" timestamp="1607484635461">
+    <state x="19" y="27" key="new project wizard" timestamp="1607505934091">
       <screen x="0" y="0" width="1280" height="679" />
     </state>
     <state x="56" y="42" key="new project wizard/0.0.1280.679/1920.31.1280.689@0.0.1280.679" timestamp="1606446097482" />
     <state x="1976" y="58" key="new project wizard/0.0.1280.679/1920.31.1280.689@1920.31.1280.689" timestamp="1606709197745" />
-    <state x="56" y="27" key="new project wizard/0.0.1280.679@0.0.1280.679" timestamp="1607484635461" />
+    <state x="19" y="27" key="new project wizard/0.0.1280.679@0.0.1280.679" timestamp="1607505934091" />
     <state x="2217" y="185" key="run.anything.popup" timestamp="1606467880716">
       <screen x="1920" y="31" width="1280" height="689" />
     </state>

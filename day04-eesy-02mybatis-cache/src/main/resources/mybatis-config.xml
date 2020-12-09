@@ -5,10 +5,10 @@
 <configuration>
     <properties resource="jdbc.properties"/>
 
-    <settings>
-        <!--开启mybatis全局延迟加载-->
+    <!--<settings>
+        &lt;!&ndash;开启mybatis全局延迟加载&ndash;&gt;
         <setting name="lazyLoadingEnabled" value="true"/>
-    </settings>
+    </settings>-->
 
     <typeAliases>
         <package name="com.learn.pojo"/>
