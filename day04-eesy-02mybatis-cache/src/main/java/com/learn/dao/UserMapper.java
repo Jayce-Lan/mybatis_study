@@ -7,4 +7,5 @@ import java.util.List;
 public interface UserMapper {
     List<User> getUserList();
     User getUserById(Integer id);
+    int updateUser(User user);
 }
