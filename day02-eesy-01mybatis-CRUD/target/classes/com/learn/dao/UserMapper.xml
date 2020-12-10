@@ -45,4 +45,10 @@
         select * from user
         where username like #{user.username}
     </select>
+
+    <insert id="addUser" parameterType="map">
+        insert into user(username, address, sex, birthday)
+        values (#{username}, #{address}, #{sex}, #{birthday});
+    </insert>
+
 </mapper>

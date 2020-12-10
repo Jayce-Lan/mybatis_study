@@ -4,6 +4,7 @@ import com.learn.domain.QueryVo;
 import com.learn.domain.User;
 
 import java.util.List;
+import java.util.Map;
 
 public interface UserMapper {
     List<User> findAll();
@@ -12,6 +13,13 @@ public interface UserMapper {
     void deleteUser(Integer id);
     User findById(Integer id);
     List<User> findByName(String username);
+
+    /**
+     * 通过map集合传入参数添加用户
+     * @param map 传入用户信息
+     * @return 成功返回1
+     */
+    int addUser(Map<String, Object> map);
 
     /**
      * 查询总用户数

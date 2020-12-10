@@ -12,7 +12,9 @@ import org.junit.Test;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class MyTest {
     private InputStream inputStream;
@@ -34,6 +36,18 @@ public class MyTest {
     public void destroy() throws IOException {
         sqlSession.close();
         inputStream.close();
+    }
+
+    @Test
+    public void addUserForMap() {
+        Map<String, Object> map = new HashMap<String, Object>();
+        map.put("username", "韩梅梅");
+        map.put("address", "广西桂林市六合区广西师范大学");
+        map.put("sex", "女");
+        map.put("birthday", new Date());
+        int count = userMapper.addUser(map);
+        System.out.println(count == 1 ? "成功" : "失败");
+        sqlSession.commit();
     }
 
     @Test

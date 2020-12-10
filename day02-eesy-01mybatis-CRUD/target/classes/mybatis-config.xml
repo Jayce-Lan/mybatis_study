@@ -33,7 +33,7 @@
     </environments>
     <mappers>
 <!--        <mapper resource="com/learn/dao/UserMapper.xml"/>-->
-        <!--package是指定dao所在的包-->
+        <!--package是指定dao所在的包，前提是xml文件必须与接口文件同名-->
         <package name="com.learn.dao"/>
     </mappers>
 </configuration>

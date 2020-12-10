@@ -34,6 +34,7 @@
         <module>day03-eesy-05mybatis-more_to_more</module>
         <module>day04-eesy-01mybatis-lazy</module>
         <module>day04-eesy-02mybatis-cache</module>
+        <module>day04-eesy-03mybatis-annotation</module>
     </modules>
 
     <!--导入依赖-->
