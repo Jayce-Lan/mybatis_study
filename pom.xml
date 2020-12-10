@@ -36,6 +36,7 @@
         <module>day04-eesy-02mybatis-cache</module>
         <module>day04-eesy-03mybatis-annotation</module>
         <module>day04-eesy-04mybatis-annotation_one_to_more</module>
+        <module>day04-eesy-05mybatis-annotation-secondCache</module>
     </modules>
 
     <!--导入依赖-->
